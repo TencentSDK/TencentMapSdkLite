@@ -1,0 +1,1 @@
+../../../../../TencentMapSdkLite/Classes/Headers/QShape.h
