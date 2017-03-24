@@ -7,48 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042267F6ED9FDE2E8A98785E77FC81EE /* QCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7E8A049107BB1F34D57F115B75C9D7 /* QCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A63DBB6E75E3318AB26286336DEEAC1 /* QTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FE014224143AFFAE27633872A098E902 /* QTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12F0D8224FF6782B19BFBD01E0C450EB /* QPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 614043BD3ADADAA2FF66E6C01AE02AE4 /* QPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B1EDD3B7744912538D41C35EBD1713E /* QTextAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BE1AF56B4D2E74109D571498A67362 /* QTextAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BB13EED7A8C896394812EEB2E0B8827 /* QGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = EADD518B662E7181BE79FB39044A9047 /* QGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1270C00190C2608CDA1ED82E6D117760 /* QUserLocationView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D7EECD1C4038215803784C97AA45A1 /* QUserLocationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15BAC6F7213C147B805CDA55D29ED338 /* QOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = E3749EFA72D0865F58D0FA64A277A4E4 /* QOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DF6318AD3F29CAB08C54970E662C9B8 /* QPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = AB119D7DF04E0499E2D7410365BD49A9 /* QPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EC09C358F531F478374D97007999DF6 /* Pods-TencentMapSdkLite_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32A9EF1CC7FB5A824F82FCA5960592 /* Pods-TencentMapSdkLite_Example-dummy.m */; };
-		225E704F5FF6B1ACD357B0CA236E9A94 /* QPolygonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5E419C93749D4FCD17F7C6CBD63131 /* QPolygonUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		248EFDBAE58217FD6C7A79193E018705 /* QMultiPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = A422792859BC3FD2BBFE913FBCD6F67C /* QMultiPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26E4DA96215D06A1B4CBA0B0B7826A5B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7462426D8737A3E796D333EB60115 /* ImageIO.framework */; };
-		39DA48CAE32E3F7497818478B0DDBAA1 /* QPolygonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3FD4067E8FFECDD34E5C1DA3BA43BC /* QPolygonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BB49C6278BB59646B71C118986B2A0E /* QOverlayPathView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8D5EBA7BD32CF18CD2231969F81F08 /* QOverlayPathView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		307BD875CFD4962AF7637CB24AD06939 /* QPolygonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F488B0C085D2E3DFE3527E3B2411859 /* QPolygonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35015E0F4B99C60FB70CB9FA11525ADD /* QAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A60277F4845B4B533FFCBA582C36AC /* QAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E9120E5D89E1BDB52648D851C339434 /* QCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D880BFA84A0377A061662D475EF0E5 /* QCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		406A93E7B3AD632D087912F11D0C53CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */; };
-		47B6CBFB580566ACCDC13FC1E9B7D682 /* QRouteInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA38298B1C663A88B74CF7361BEAF9C /* QRouteInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FCDB496EB007C4F0F681F2FC8588D6C /* QOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9018371543A6632F447C85AA360EE8 /* QOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		512D4164D58C0219253B3CA1059DFAC8 /* QAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6613D3FCBA3423BB4562DC8A7AAE213E /* QAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48216F0E868D70232F1681448B9A1434 /* QGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6DCD7605CE6A9FE9DFA973FC3FB3B6 /* QGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F9046136D7D357717B31B68FC3C456D /* QAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 517BF617BD020700D7E70BBEBAA810BF /* QAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		548B1743C210CD850ED69033DC774C83 /* QRouteInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BFDE9E2D6C21CF1DD9B2E2E87851BF /* QRouteInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54F8D63F0A460E106E7ABC594D3AC92C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */; };
+		59F172878CB7FF66F41B7300BD6B6673 /* QTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD35964587ECABCED8922E2C40B8920 /* QTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C2CF542A8211D2ACA01B11B2556B0F4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4584FCD8E52BECCE2FC03945A2209E /* CoreLocation.framework */; };
-		5F1A587C84201F3B265708A53C03B55E /* QOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF891EFC2E0532C58B49AC9344FC9CE /* QOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65D6B0B0C202A0336C53701190746857 /* QMapKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6A56B26F0B069CD963A3E7425CD8A6 /* QMapKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69A074280AFD52304CE0AC10CF1BAC88 /* QMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FBBD93BFA60362CC570AD1504437C9 /* QMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E0674F7FC1755D9CD969644D8934755 /* QOverlayPathView.h in Headers */ = {isa = PBXBuildFile; fileRef = 02174FAA4E9D01A4C224B65856A6CE52 /* QOverlayPathView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BE172087160CBBE2F84C7733DFAE40C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB6A3BE196D0312692651DD12FA67BE /* QuartzCore.framework */; };
+		7251F5471ABE34FB27057D0F5FAB476F /* QPinAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D564D744273DD990627AAFA8348F3C /* QPinAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73D8399783C9878956BFF85E41FE9515 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1A7EAEB6297EFD7DA2393DE9EA868F /* UIKit.framework */; };
 		77A2B2DEA28FCAF93079A087C444EBB8 /* TencentMapSdkLite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36E8634339748B87B0D7C97F29C96A /* TencentMapSdkLite-dummy.m */; };
 		77B6AF1932CB13E50186A139E80DE27E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B060BE6730F20C87E2D57164BAA9CF44 /* CoreGraphics.framework */; };
-		8649C85A00F19953BBE621AC304BF66C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8233F6BCCEBB7D8E4D5E4CE2D307C0E1 /* ReplaceMe.m */; };
-		9E55C1161B7D5B13B93EE7FFAA547053 /* QTextAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4D416E3CAE131869C0CEEB1E0EBFF8 /* QTextAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A105CE49A7FA65656DBD1B596BD7D179 /* QPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = F80CC5804F10CDBA6F5D777721C18010 /* QPolyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BF00EC46CB1F39FA4EA97AFB871A845 /* QUserLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = F70A921C70E7F70A88ECE5C19D62588E /* QUserLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8649C85A00F19953BBE621AC304BF66C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9A459A77B0F0EA0BDE208B6DF5110 /* ReplaceMe.m */; };
+		9FACB90FABE4269BC2565F37BF4CC087 /* QMapKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A97C74CDD750C0E0573333ED6FD6935 /* QMapKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1C08EBA6B3F7380DFA6C9586B964302 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8086A3E55758994AB2ED9EEFC41C3F24 /* Accelerate.framework */; };
 		A7AD72D6AA2BC894C690AF4D46B0844C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192E33207E454FD17C94B1A60C943028 /* CoreTelephony.framework */; };
+		AE2A7798E07C79D318155CE9098E8CBB /* QCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF14B675E92D5B9717B1A09B781BA6B /* QCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8E85FF84EA3D127D74B2A9E375F652C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */; };
 		B9071F3FF78BEF5AC766F1AE5F19015F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A65F2DA2A02C8281CD43107B9155C2 /* SystemConfiguration.framework */; };
-		BC4D17F9FB4D22A3C7BB6961FCDE788A /* QPointAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 323E1FB2D9D5FC0B30CA82E348886357 /* QPointAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD1942D5D2F9E83796040F551E468AB2 /* QCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 730ACD6BAF779E6914AC55AF78167380 /* QCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF638DFF8F297B8196675990B5090F83 /* QTextAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AF47870E1FAAE6B4843137A615E406 /* QTextAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6E79E3D39FB699A79780A2AF441CDF4 /* QMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 876AC124F9B1353396863800C1D2D5A9 /* QMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8814EF5FE8D6D32DD0544B16A95E591 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC2415F1D98CB8632C719084FA3852 /* OpenGLES.framework */; };
 		C8DA4A8032A3E5B8088E75C308CD5996 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5583ACEED09B2A87C7B17809EBB2611 /* CoreText.framework */; };
-		D04D1160D6145ECBD783168AE5523BA8 /* QAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A237A04AC2E80CE1119D74CDF83E819 /* QAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1A734FDBC729C8DA132041530F8B317 /* QPinAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3118598008FFD2B9553F1E2D712342 /* QPinAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDED1CB5C0C209644D9F5939DB8238C8 /* QShape.h in Headers */ = {isa = PBXBuildFile; fileRef = CD51ADF46FA681B048112C1794F5768A /* QShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1929A070926ECA09502DADF7FA9FE77 /* QOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0295E60AFD627985646FD9302FB7234D /* QOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5BC4EC659E05C1AF365FEBEC1B1836F /* QAppKeyCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 5977188C7A10CB1C682308B4BCEC86FA /* QAppKeyCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C4198A9B3D08481920188C3D9B05D1 /* QShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0F09FF5D963A66B8D3617E978875DE /* QShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC48479311AD6E96EF510862AFAA33C1 /* QPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = AC41C646CA91EE919433937EEC9B7407 /* QPolyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE16FDFC87C413C16451A599A9D43D52 /* Pods-TencentMapSdkLite_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 428783272EEA5B20A4E3C738781B826A /* Pods-TencentMapSdkLite_Tests-dummy.m */; };
-		E48DA38DBC860A5A2F83B0FA51F50982 /* QMultiPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C57AD11BDD3B2C4331D0D5B708325178 /* QMultiPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E95019D8836FB87DB4A85D1851B9A54D /* QPolylineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9251543E03DE8769ECBBD6691AA2FF6E /* QPolylineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9AF52C2342312BBA868B33EB6F8939E /* QAppKeyCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1DE2564DF1F00B02004EA73ED49ADD /* QAppKeyCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC435BD6FE1F291B0B57D22BDE79C10D /* QUserLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C1F25E1820630288B9825D3A6D476B /* QUserLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E16139A94C26BE35146373E238B6F433 /* QPolygonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FD7B7EAEE5D7417F7793EED8D2413461 /* QPolygonUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECC5C6F334067AECE30831F5B430C620 /* QPolylineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7154EEDB8012CED55900BD1959101D4E /* QPolylineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1AA0D1867093B863ED98C3FD3735C4D /* QPointAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F34CDECC6E2973B7CE9BED06111FC0B /* QPointAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3FA3A7DABE8C03237E49AE13E473396 /* QTextAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6038108515B50BF1417A01BD03692C16 /* QTextAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,65 +63,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02174FAA4E9D01A4C224B65856A6CE52 /* QOverlayPathView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlayPathView.h; sourceTree = "<group>"; };
+		0295E60AFD627985646FD9302FB7234D /* QOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlayView.h; sourceTree = "<group>"; };
 		055C6FEC3EBD37EFB4B5B64B0640312A /* libPods-TencentMapSdkLite_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TencentMapSdkLite_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06870429616EF405BD1CC62BD0A7CE3C /* Pods-TencentMapSdkLite_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0BF891EFC2E0532C58B49AC9344FC9CE /* QOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlay.h; sourceTree = "<group>"; };
+		0AF14B675E92D5B9717B1A09B781BA6B /* QCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QCircle.h; sourceTree = "<group>"; };
 		1445331765DBB8D721B8F16A52726C13 /* Pods-TencentMapSdkLite_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Example-resources.sh"; sourceTree = "<group>"; };
 		187E63D05EBCEFCAB63EFFBE4AE48134 /* Pods-TencentMapSdkLite_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Tests-resources.sh"; sourceTree = "<group>"; };
 		192E33207E454FD17C94B1A60C943028 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		1B3FD4067E8FFECDD34E5C1DA3BA43BC /* QPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygonView.h; sourceTree = "<group>"; };
 		1B4584FCD8E52BECCE2FC03945A2209E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		1D0F09FF5D963A66B8D3617E978875DE /* QShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QShape.h; sourceTree = "<group>"; };
+		1F488B0C085D2E3DFE3527E3B2411859 /* QPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygonView.h; sourceTree = "<group>"; };
 		22C7462426D8737A3E796D333EB60115 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		2A1B58D64AB2997A56A723988E3FBC5E /* Pods-TencentMapSdkLite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2DCD21E756C8A765876364C52307F24A /* Pods-TencentMapSdkLite_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2E36E8634339748B87B0D7C97F29C96A /* TencentMapSdkLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TencentMapSdkLite-dummy.m"; sourceTree = "<group>"; };
-		323E1FB2D9D5FC0B30CA82E348886357 /* QPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPointAnnotation.h; sourceTree = "<group>"; };
-		38FBBD93BFA60362CC570AD1504437C9 /* QMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMapView.h; sourceTree = "<group>"; };
+		37AF47870E1FAAE6B4843137A615E406 /* QTextAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTextAnnotation.h; sourceTree = "<group>"; };
+		3A97C74CDD750C0E0573333ED6FD6935 /* QMapKitLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMapKitLite.h; sourceTree = "<group>"; };
 		428783272EEA5B20A4E3C738781B826A /* Pods-TencentMapSdkLite_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TencentMapSdkLite_Tests-dummy.m"; sourceTree = "<group>"; };
-		44C1F25E1820630288B9825D3A6D476B /* QUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QUserLocation.h; sourceTree = "<group>"; };
+		42F9A459A77B0F0EA0BDE208B6DF5110 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		4856BD1A8B51AE347E483B12D1A1DD1A /* Pods-TencentMapSdkLite_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4BA38298B1C663A88B74CF7361BEAF9C /* QRouteInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QRouteInfo.h; sourceTree = "<group>"; };
 		4CB6A3BE196D0312692651DD12FA67BE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		4D6A56B26F0B069CD963A3E7425CD8A6 /* QMapKitLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMapKitLite.h; sourceTree = "<group>"; };
+		4FD35964587ECABCED8922E2C40B8920 /* QTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTypes.h; sourceTree = "<group>"; };
+		517BF617BD020700D7E70BBEBAA810BF /* QAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAnnotationView.h; sourceTree = "<group>"; };
 		53DBB142C53B3323DB70123B2A322633 /* libTencentMapSdkLite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTencentMapSdkLite.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A237A04AC2E80CE1119D74CDF83E819 /* QAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAnnotation.h; sourceTree = "<group>"; };
+		5977188C7A10CB1C682308B4BCEC86FA /* QAppKeyCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAppKeyCheck.h; sourceTree = "<group>"; };
 		5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		614043BD3ADADAA2FF66E6C01AE02AE4 /* QPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygon.h; sourceTree = "<group>"; };
-		6613D3FCBA3423BB4562DC8A7AAE213E /* QAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAnnotationView.h; sourceTree = "<group>"; };
+		5F34CDECC6E2973B7CE9BED06111FC0B /* QPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPointAnnotation.h; sourceTree = "<group>"; };
+		6038108515B50BF1417A01BD03692C16 /* QTextAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTextAnnotationView.h; sourceTree = "<group>"; };
+		65A60277F4845B4B533FFCBA582C36AC /* QAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAnnotation.h; sourceTree = "<group>"; };
 		68A65F2DA2A02C8281CD43107B9155C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		6A8D5EBA7BD32CF18CD2231969F81F08 /* QOverlayPathView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlayPathView.h; sourceTree = "<group>"; };
+		7154EEDB8012CED55900BD1959101D4E /* QPolylineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolylineView.h; sourceTree = "<group>"; };
 		71FC2415F1D98CB8632C719084FA3852 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
-		730ACD6BAF779E6914AC55AF78167380 /* QCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QCircle.h; sourceTree = "<group>"; };
-		7B9018371543A6632F447C85AA360EE8 /* QOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlayView.h; sourceTree = "<group>"; };
 		8086A3E55758994AB2ED9EEFC41C3F24 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		8233F6BCCEBB7D8E4D5E4CE2D307C0E1 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		844A76D3CF5A8FF30CE08BF4CFF953F2 /* Pods-TencentMapSdkLite_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TencentMapSdkLite_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		86D880BFA84A0377A061662D475EF0E5 /* QCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QCircleView.h; sourceTree = "<group>"; };
+		876AC124F9B1353396863800C1D2D5A9 /* QMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMapView.h; sourceTree = "<group>"; };
+		88BFDE9E2D6C21CF1DD9B2E2E87851BF /* QRouteInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QRouteInfo.h; sourceTree = "<group>"; };
+		88D564D744273DD990627AAFA8348F3C /* QPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPinAnnotationView.h; sourceTree = "<group>"; };
 		88F9C8CB20CC1075AF0E5C77C931F696 /* Pods-TencentMapSdkLite_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TencentMapSdkLite_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8D32A9EF1CC7FB5A824F82FCA5960592 /* Pods-TencentMapSdkLite_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TencentMapSdkLite_Example-dummy.m"; sourceTree = "<group>"; };
 		8E3E65141010D4FB1F010DC59907C912 /* TencentMapSdkLite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TencentMapSdkLite.xcconfig; sourceTree = "<group>"; };
-		9251543E03DE8769ECBBD6691AA2FF6E /* QPolylineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolylineView.h; sourceTree = "<group>"; };
 		9301F49D74568C0798BB9E5C4AFF3A8C /* SOSOMAPRES.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = SOSOMAPRES.bundle; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		952D364EE25FFC0759A3583B3CC189AF /* TencentMapSdkLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TencentMapSdkLite-prefix.pch"; sourceTree = "<group>"; };
 		9CC3C2F2F23C041DB5C88E44DDD0B1E2 /* libPods-TencentMapSdkLite_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TencentMapSdkLite_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A422792859BC3FD2BBFE913FBCD6F67C /* QMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMultiPoint.h; sourceTree = "<group>"; };
 		A78A485316614F137AEBBD10C4D5EC1F /* Pods-TencentMapSdkLite_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TencentMapSdkLite_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AA3118598008FFD2B9553F1E2D712342 /* QPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPinAnnotationView.h; sourceTree = "<group>"; };
-		AB5E419C93749D4FCD17F7C6CBD63131 /* QPolygonUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygonUtil.h; sourceTree = "<group>"; };
+		AB119D7DF04E0499E2D7410365BD49A9 /* QPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygon.h; sourceTree = "<group>"; };
+		AB6DCD7605CE6A9FE9DFA973FC3FB3B6 /* QGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QGeometry.h; sourceTree = "<group>"; };
+		AC41C646CA91EE919433937EEC9B7407 /* QPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolyline.h; sourceTree = "<group>"; };
 		B060BE6730F20C87E2D57164BAA9CF44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		B115ADEC6BCB912A9A68B29A3F2D79E3 /* Pods-TencentMapSdkLite_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BE1A7EAEB6297EFD7DA2393DE9EA868F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C57AD11BDD3B2C4331D0D5B708325178 /* QMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMultiPoint.h; sourceTree = "<group>"; };
-		CA4D416E3CAE131869C0CEEB1E0EBFF8 /* QTextAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTextAnnotation.h; sourceTree = "<group>"; };
-		CB7E8A049107BB1F34D57F115B75C9D7 /* QCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QCircleView.h; sourceTree = "<group>"; };
-		CD51ADF46FA681B048112C1794F5768A /* QShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QShape.h; sourceTree = "<group>"; };
+		C5D7EECD1C4038215803784C97AA45A1 /* QUserLocationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QUserLocationView.h; sourceTree = "<group>"; };
 		D7218DE10CD36AF2791236AC2809AF18 /* Pods-TencentMapSdkLite_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TencentMapSdkLite_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DE1DE2564DF1F00B02004EA73ED49ADD /* QAppKeyCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAppKeyCheck.h; sourceTree = "<group>"; };
+		E3749EFA72D0865F58D0FA64A277A4E4 /* QOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlay.h; sourceTree = "<group>"; };
 		E5583ACEED09B2A87C7B17809EBB2611 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		EADD518B662E7181BE79FB39044A9047 /* QGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QGeometry.h; sourceTree = "<group>"; };
-		F4BE1AF56B4D2E74109D571498A67362 /* QTextAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTextAnnotationView.h; sourceTree = "<group>"; };
-		F80CC5804F10CDBA6F5D777721C18010 /* QPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolyline.h; sourceTree = "<group>"; };
+		F70A921C70E7F70A88ECE5C19D62588E /* QUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QUserLocation.h; sourceTree = "<group>"; };
 		FA6B3932CF549EC5FE6359CED31B3B2F /* Pods-TencentMapSdkLite_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FE014224143AFFAE27633872A098E902 /* QTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTypes.h; sourceTree = "<group>"; };
+		FD7B7EAEE5D7417F7793EED8D2413461 /* QPolygonUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygonUtil.h; sourceTree = "<group>"; };
 		FFA4F1E46603A602F06D98131440ABF1 /* libQMapKitLite.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libQMapKitLite.a; path = TencentMapSdkLite/Library/libQMapKitLite.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,7 +177,7 @@
 		2448BAC954ADE5CED6B5D1113D863B8F /* TencentMapSdkLite */ = {
 			isa = PBXGroup;
 			children = (
-				89C43EB857E5D408E3F01ECFA8315F2C /* Classes */,
+				A53FCA41C674C3637CDDC3EC2B528A3C /* Classes */,
 			);
 			path = TencentMapSdkLite;
 			sourceTree = "<group>";
@@ -217,15 +219,6 @@
 			);
 			name = TencentMapSdkLite;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		89C43EB857E5D408E3F01ECFA8315F2C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8233F6BCCEBB7D8E4D5E4CE2D307C0E1 /* ReplaceMe.m */,
-				CA0770F93011744A977095A4B98FE4FC /* Headers */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		8BEA4FB3E87F5D88AA20DB18564EC842 /* Pods-TencentMapSdkLite_Tests */ = {
@@ -287,36 +280,46 @@
 			path = "Example/Pods/Target Support Files/TencentMapSdkLite";
 			sourceTree = "<group>";
 		};
-		CA0770F93011744A977095A4B98FE4FC /* Headers */ = {
+		A3C801AE12DF72E9D8396C9ED86F932D /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				5A237A04AC2E80CE1119D74CDF83E819 /* QAnnotation.h */,
-				6613D3FCBA3423BB4562DC8A7AAE213E /* QAnnotationView.h */,
-				DE1DE2564DF1F00B02004EA73ED49ADD /* QAppKeyCheck.h */,
-				730ACD6BAF779E6914AC55AF78167380 /* QCircle.h */,
-				CB7E8A049107BB1F34D57F115B75C9D7 /* QCircleView.h */,
-				EADD518B662E7181BE79FB39044A9047 /* QGeometry.h */,
-				4D6A56B26F0B069CD963A3E7425CD8A6 /* QMapKitLite.h */,
-				38FBBD93BFA60362CC570AD1504437C9 /* QMapView.h */,
-				C57AD11BDD3B2C4331D0D5B708325178 /* QMultiPoint.h */,
-				0BF891EFC2E0532C58B49AC9344FC9CE /* QOverlay.h */,
-				6A8D5EBA7BD32CF18CD2231969F81F08 /* QOverlayPathView.h */,
-				7B9018371543A6632F447C85AA360EE8 /* QOverlayView.h */,
-				AA3118598008FFD2B9553F1E2D712342 /* QPinAnnotationView.h */,
-				323E1FB2D9D5FC0B30CA82E348886357 /* QPointAnnotation.h */,
-				614043BD3ADADAA2FF66E6C01AE02AE4 /* QPolygon.h */,
-				AB5E419C93749D4FCD17F7C6CBD63131 /* QPolygonUtil.h */,
-				1B3FD4067E8FFECDD34E5C1DA3BA43BC /* QPolygonView.h */,
-				F80CC5804F10CDBA6F5D777721C18010 /* QPolyline.h */,
-				9251543E03DE8769ECBBD6691AA2FF6E /* QPolylineView.h */,
-				4BA38298B1C663A88B74CF7361BEAF9C /* QRouteInfo.h */,
-				CD51ADF46FA681B048112C1794F5768A /* QShape.h */,
-				CA4D416E3CAE131869C0CEEB1E0EBFF8 /* QTextAnnotation.h */,
-				F4BE1AF56B4D2E74109D571498A67362 /* QTextAnnotationView.h */,
-				FE014224143AFFAE27633872A098E902 /* QTypes.h */,
-				44C1F25E1820630288B9825D3A6D476B /* QUserLocation.h */,
+				65A60277F4845B4B533FFCBA582C36AC /* QAnnotation.h */,
+				517BF617BD020700D7E70BBEBAA810BF /* QAnnotationView.h */,
+				5977188C7A10CB1C682308B4BCEC86FA /* QAppKeyCheck.h */,
+				0AF14B675E92D5B9717B1A09B781BA6B /* QCircle.h */,
+				86D880BFA84A0377A061662D475EF0E5 /* QCircleView.h */,
+				AB6DCD7605CE6A9FE9DFA973FC3FB3B6 /* QGeometry.h */,
+				3A97C74CDD750C0E0573333ED6FD6935 /* QMapKitLite.h */,
+				876AC124F9B1353396863800C1D2D5A9 /* QMapView.h */,
+				A422792859BC3FD2BBFE913FBCD6F67C /* QMultiPoint.h */,
+				E3749EFA72D0865F58D0FA64A277A4E4 /* QOverlay.h */,
+				02174FAA4E9D01A4C224B65856A6CE52 /* QOverlayPathView.h */,
+				0295E60AFD627985646FD9302FB7234D /* QOverlayView.h */,
+				88D564D744273DD990627AAFA8348F3C /* QPinAnnotationView.h */,
+				5F34CDECC6E2973B7CE9BED06111FC0B /* QPointAnnotation.h */,
+				AB119D7DF04E0499E2D7410365BD49A9 /* QPolygon.h */,
+				FD7B7EAEE5D7417F7793EED8D2413461 /* QPolygonUtil.h */,
+				1F488B0C085D2E3DFE3527E3B2411859 /* QPolygonView.h */,
+				AC41C646CA91EE919433937EEC9B7407 /* QPolyline.h */,
+				7154EEDB8012CED55900BD1959101D4E /* QPolylineView.h */,
+				88BFDE9E2D6C21CF1DD9B2E2E87851BF /* QRouteInfo.h */,
+				1D0F09FF5D963A66B8D3617E978875DE /* QShape.h */,
+				37AF47870E1FAAE6B4843137A615E406 /* QTextAnnotation.h */,
+				6038108515B50BF1417A01BD03692C16 /* QTextAnnotationView.h */,
+				4FD35964587ECABCED8922E2C40B8920 /* QTypes.h */,
+				F70A921C70E7F70A88ECE5C19D62588E /* QUserLocation.h */,
+				C5D7EECD1C4038215803784C97AA45A1 /* QUserLocationView.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		A53FCA41C674C3637CDDC3EC2B528A3C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42F9A459A77B0F0EA0BDE208B6DF5110 /* ReplaceMe.m */,
+				A3C801AE12DF72E9D8396C9ED86F932D /* Headers */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		D915F28FBEAF985CA963AEAB123E81B5 /* Resources */ = {
@@ -363,35 +366,36 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		38308AD2ABB04FDB0BF4277EE446AF2E /* Headers */ = {
+		434A3794FA715CBF8CB0AA78D71498A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D04D1160D6145ECBD783168AE5523BA8 /* QAnnotation.h in Headers */,
-				512D4164D58C0219253B3CA1059DFAC8 /* QAnnotationView.h in Headers */,
-				E9AF52C2342312BBA868B33EB6F8939E /* QAppKeyCheck.h in Headers */,
-				BD1942D5D2F9E83796040F551E468AB2 /* QCircle.h in Headers */,
-				042267F6ED9FDE2E8A98785E77FC81EE /* QCircleView.h in Headers */,
-				1BB13EED7A8C896394812EEB2E0B8827 /* QGeometry.h in Headers */,
-				65D6B0B0C202A0336C53701190746857 /* QMapKitLite.h in Headers */,
-				69A074280AFD52304CE0AC10CF1BAC88 /* QMapView.h in Headers */,
-				E48DA38DBC860A5A2F83B0FA51F50982 /* QMultiPoint.h in Headers */,
-				5F1A587C84201F3B265708A53C03B55E /* QOverlay.h in Headers */,
-				3BB49C6278BB59646B71C118986B2A0E /* QOverlayPathView.h in Headers */,
-				4FCDB496EB007C4F0F681F2FC8588D6C /* QOverlayView.h in Headers */,
-				D1A734FDBC729C8DA132041530F8B317 /* QPinAnnotationView.h in Headers */,
-				BC4D17F9FB4D22A3C7BB6961FCDE788A /* QPointAnnotation.h in Headers */,
-				12F0D8224FF6782B19BFBD01E0C450EB /* QPolygon.h in Headers */,
-				225E704F5FF6B1ACD357B0CA236E9A94 /* QPolygonUtil.h in Headers */,
-				39DA48CAE32E3F7497818478B0DDBAA1 /* QPolygonView.h in Headers */,
-				A105CE49A7FA65656DBD1B596BD7D179 /* QPolyline.h in Headers */,
-				E95019D8836FB87DB4A85D1851B9A54D /* QPolylineView.h in Headers */,
-				47B6CBFB580566ACCDC13FC1E9B7D682 /* QRouteInfo.h in Headers */,
-				DDED1CB5C0C209644D9F5939DB8238C8 /* QShape.h in Headers */,
-				9E55C1161B7D5B13B93EE7FFAA547053 /* QTextAnnotation.h in Headers */,
-				1B1EDD3B7744912538D41C35EBD1713E /* QTextAnnotationView.h in Headers */,
-				0A63DBB6E75E3318AB26286336DEEAC1 /* QTypes.h in Headers */,
-				FC435BD6FE1F291B0B57D22BDE79C10D /* QUserLocation.h in Headers */,
+				35015E0F4B99C60FB70CB9FA11525ADD /* QAnnotation.h in Headers */,
+				4F9046136D7D357717B31B68FC3C456D /* QAnnotationView.h in Headers */,
+				D5BC4EC659E05C1AF365FEBEC1B1836F /* QAppKeyCheck.h in Headers */,
+				AE2A7798E07C79D318155CE9098E8CBB /* QCircle.h in Headers */,
+				3E9120E5D89E1BDB52648D851C339434 /* QCircleView.h in Headers */,
+				48216F0E868D70232F1681448B9A1434 /* QGeometry.h in Headers */,
+				9FACB90FABE4269BC2565F37BF4CC087 /* QMapKitLite.h in Headers */,
+				C6E79E3D39FB699A79780A2AF441CDF4 /* QMapView.h in Headers */,
+				248EFDBAE58217FD6C7A79193E018705 /* QMultiPoint.h in Headers */,
+				15BAC6F7213C147B805CDA55D29ED338 /* QOverlay.h in Headers */,
+				5E0674F7FC1755D9CD969644D8934755 /* QOverlayPathView.h in Headers */,
+				D1929A070926ECA09502DADF7FA9FE77 /* QOverlayView.h in Headers */,
+				7251F5471ABE34FB27057D0F5FAB476F /* QPinAnnotationView.h in Headers */,
+				F1AA0D1867093B863ED98C3FD3735C4D /* QPointAnnotation.h in Headers */,
+				1DF6318AD3F29CAB08C54970E662C9B8 /* QPolygon.h in Headers */,
+				E16139A94C26BE35146373E238B6F433 /* QPolygonUtil.h in Headers */,
+				307BD875CFD4962AF7637CB24AD06939 /* QPolygonView.h in Headers */,
+				DC48479311AD6E96EF510862AFAA33C1 /* QPolyline.h in Headers */,
+				ECC5C6F334067AECE30831F5B430C620 /* QPolylineView.h in Headers */,
+				548B1743C210CD850ED69033DC774C83 /* QRouteInfo.h in Headers */,
+				D8C4198A9B3D08481920188C3D9B05D1 /* QShape.h in Headers */,
+				BF638DFF8F297B8196675990B5090F83 /* QTextAnnotation.h in Headers */,
+				F3FA3A7DABE8C03237E49AE13E473396 /* QTextAnnotationView.h in Headers */,
+				59F172878CB7FF66F41B7300BD6B6673 /* QTypes.h in Headers */,
+				7BF00EC46CB1F39FA4EA97AFB871A845 /* QUserLocation.h in Headers */,
+				1270C00190C2608CDA1ED82E6D117760 /* QUserLocationView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +424,7 @@
 			buildPhases = (
 				604651F24C25FF92119E88AC57A8153E /* Sources */,
 				2FFE3355E29DE6C49B5FEABD73CF361A /* Frameworks */,
-				38308AD2ABB04FDB0BF4277EE446AF2E /* Headers */,
+				434A3794FA715CBF8CB0AA78D71498A2 /* Headers */,
 			);
 			buildRules = (
 			);
