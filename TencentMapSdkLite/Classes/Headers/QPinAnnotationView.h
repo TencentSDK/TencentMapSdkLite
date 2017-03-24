@@ -26,8 +26,8 @@ enum {
 typedef NSUInteger QPinAnnotationColor;
 
 /**
- *QPinAnnotationView:定义类似大头针效果的annotation view
- *Author:ksnowlv
+ * QPinAnnotationView:定义类似大头针效果的annotation view
+ * QPinAnnotationView 的anchorPoint固定在底部中心 set mDrawMode&anchorPoint do nothing
  **/
 @interface QPinAnnotationView : QAnnotationView
 
@@ -39,4 +39,5 @@ typedef NSUInteger QPinAnnotationColor;
 /**下落动画效果**/
 
 - (void)animatesDrop:(id)object;
+
 @end

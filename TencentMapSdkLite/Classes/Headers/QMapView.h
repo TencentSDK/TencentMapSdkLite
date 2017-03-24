@@ -19,7 +19,7 @@
 #import "QTypes.h"
 #import "QUserLocation.h"
 #import "QOverlay.h"
-
+#import "QUserLocationView.h"
 @class QPointAnnotation;
 @class QRouteOverlay;
 @class QRouteOverlayGroup;
@@ -312,6 +312,11 @@
  * 当前用户位置，返回坐标为经纬度坐标等,非导航下返回的是原始经纬度，导航下返回的是吸附后的经纬度
  */
 @property(nonatomic, readonly) QUserLocation *userLocation;
+
+/**
+ * 当前用户位置View,可以设置用户位置图片
+ */
+@property(nonatomic, readonly) QUserLocationView *userLocationView;
 
 /**
  * 返回定位坐标点是否在当前地图可视区域内
@@ -1181,8 +1186,9 @@
  *用户位置更新后，会调用此函数
  *@param mapView 地图View
  *@param userLocation 新的用户位置
+ *@param bFromHeading 是否为heading 变化触发，如果为location变化触发,则为NO
  */
-- (void)mapView:(QMapView *)mapView didUpdateUserLocation:(QUserLocation *)userLocation;
+- (void)mapView:(QMapView *)mapView didUpdateUserLocation:(QUserLocation *)userLocation sender:(BOOL)bFromHeading;
 
 /**
  * 定位失败后，会调用此函数
@@ -1249,13 +1255,6 @@
  * @param coordinate 长按处的经纬度
  */
 - (void)mapView:(QMapView *)mapView longPressAtCoordinate:(CLLocationCoordinate2D)coordinate;
-
-/**
- * 点中底图标注后会回调此接口
- * @param mapView 地图View
- * @param mapPoi 标注点信息
- */
-- (void)mapView:(QMapView *)mapView onClickedMapPoi:(QMapPoi*)mapPoi;
 
 /**
  * 地图的位置变化时会持续调用此接口

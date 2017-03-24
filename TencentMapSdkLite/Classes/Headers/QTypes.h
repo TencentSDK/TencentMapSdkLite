@@ -18,20 +18,17 @@
  *Author:ksnowlv
  * edit by cleverzhang 2014-09-04
  **/
-enum {
-    QMapTypeStandard    = 0, /** 标准地图**/
-    QMapTypeSatellite , /** 卫星地图**/
-};
-/* move here from QMMapView.h by cleverzhang 2014-08-19*/
-enum {
-	QMUserTrackingModeNone = 0, // the user's location is not followed
-	QMUserTrackingModeFollow, // the map follows the user's location
-	QMUserTrackingModeFollowWithHeading, // the map follows the user's location and heading
-};
-typedef NSInteger QMUserTrackingMode;
 
-/**地图类型**/
-typedef NSUInteger QMapType;
+typedef NS_ENUM(NSUInteger, QMapType) {
+    QMapTypeStandard    = 0, /** 标准地图**/
+    //QMapTypeSatellite , /** 卫星地图 此版本不支持**/
+};
+
+typedef NS_ENUM(NSUInteger, QMUserTrackingMode) {
+    QMUserTrackingModeNone = 0, // the user's location is not followed
+    QMUserTrackingModeFollow, // the map follows the user's location
+    QMUserTrackingModeFollowWithHeading, // the map follows the user's location and heading
+};
 
 typedef NS_ENUM(NSInteger, QCoordinateType)
 {

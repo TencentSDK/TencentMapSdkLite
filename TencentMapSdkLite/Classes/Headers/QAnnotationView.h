@@ -25,18 +25,22 @@
 
 /* edit by cleverzhang 2014-09-11*/
 typedef enum:NSUInteger{
-    /**指定图片与坐标点位置关系，CENTER_MODE指定坐标点中心对应Image中心，
-     BOTTOM_MODE指定坐标点在Image底部中点，布局如指针等标识。**/
-    KIMAGE_DRAW_MODE_NONE = 0,
-    KIMAGE_BOTTOM_LEFT_MODE,
-    KIMAGE_BOTTOM_CENTER_MODE,
-    KIMAGE_BOTTOM_RIGHT_MODE,
-    KIMAGE_MIDDLE_LEFT_MODE,
-    KIMAGE_MIDDLE_CENTER_MODE,
-    KIMAGE_MIDDLE_RIGHT_MODE,
-    KIMAGE_TOP_LEFT_MODE,
-    KIMAGE_TOP_CENTER_MODE,
-    KIMAGE_TOP_RIGHT_MODE,
+    /**指定图片与坐标点位置关系， KIMAGE_MIDDLE_CENTER_MODE指定坐标点中心对应Image中心，
+     * BOTTOM_MODE指定坐标点在Image底部中点,如9宫格布局,默认为KIMAGE_MIDDLE_CENTER_MODE
+     * 7 8 9
+     * 4 5 6
+     * 1 2 3
+     */
+    KIMAGE_DRAW_MODE_NONE = 0, // 等于 KIMAGE_MIDDLE_CENTER_MODE
+    KIMAGE_BOTTOM_LEFT_MODE = 1,
+    KIMAGE_BOTTOM_CENTER_MODE = 2,
+    KIMAGE_BOTTOM_RIGHT_MODE = 3,
+    KIMAGE_MIDDLE_LEFT_MODE = 4,
+    KIMAGE_MIDDLE_CENTER_MODE = 5,
+    KIMAGE_MIDDLE_RIGHT_MODE = 6,
+    KIMAGE_TOP_LEFT_MODE = 7,
+    KIMAGE_TOP_CENTER_MODE = 8 ,
+    KIMAGE_TOP_RIGHT_MODE = 9 ,
 }ImageDrawMode;
 //end
 @property (nonatomic, strong) QMAnnotationView * annotationViewInternal;

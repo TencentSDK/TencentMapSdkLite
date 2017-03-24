@@ -40,3 +40,4 @@ FOUNDATION_EXPORT const unsigned char QMapKitVersionString[];
 #import "QTextAnnotationView.h"
 #import "QPolygonUtil.h"
 #import "QAppKeyCheck.h"
+#import "QUserLocationView.h"

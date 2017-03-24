@@ -52,6 +52,9 @@ typedef NS_ENUM(NSUInteger, BezierType) {
 /**彩虹蚯蚓多纹理的行数，彩虹蚯蚓纹理使用的属性**/
 @property(nonatomic, assign) int textureRow;
 
+/*箭头纹理名称,如果不在mainBundle下，请用绝对路径*/
+@property(nonatomic, strong) NSString* arrowImageName;
+
 /**彩虹蚯蚓点纹理的间距(icon大小的倍数)，点纹理使用的属性**/
 @property(nonatomic, assign) CGFloat dottedLineStep;
 
