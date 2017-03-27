@@ -26,6 +26,7 @@
 		D42035E61E84FE6E005002E7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42035E11E84FE6E005002E7 /* MasterViewController.m */; };
 		D42035E71E84FE6E005002E7 /* QMapRouteDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42035E41E84FE6E005002E7 /* QMapRouteDemoViewController.m */; };
 		D42035E91E8501D1005002E7 /* 第三极.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D42035E81E8501D1005002E7 /* 第三极.gpx */; };
+		D42035ED1E88FA3A005002E7 /* QMapAnnotationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42035EC1E88FA3A005002E7 /* QMapAnnotationDemoViewController.m */; };
 		DFA1851124FC7730935A243C /* libPods-TencentMapSdkLite_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C63CDC61D80BC4C56DBAD6 /* libPods-TencentMapSdkLite_Example.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		D42035E31E84FE6E005002E7 /* QMapRouteDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMapRouteDemoViewController.h; sourceTree = "<group>"; };
 		D42035E41E84FE6E005002E7 /* QMapRouteDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMapRouteDemoViewController.m; sourceTree = "<group>"; };
 		D42035E81E8501D1005002E7 /* 第三极.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "第三极.gpx"; sourceTree = "<group>"; };
+		D42035EB1E88FA3A005002E7 /* QMapAnnotationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMapAnnotationDemoViewController.h; sourceTree = "<group>"; };
+		D42035EC1E88FA3A005002E7 /* QMapAnnotationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMapAnnotationDemoViewController.m; sourceTree = "<group>"; };
 		FAD7401EC2CD309D2CC6C202 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +146,7 @@
 				6003F59C195388D20070C39A /* QMapAppDelegate.h */,
 				6003F59D195388D20070C39A /* QMapAppDelegate.m */,
 				D42035E81E8501D1005002E7 /* 第三极.gpx */,
+				D42035EA1E88FA3A005002E7 /* AnnotationDemo */,
 				D42035DD1E84FE6E005002E7 /* BaseDemo */,
 				D42035E01E84FE6E005002E7 /* MasterViewController.h */,
 				D42035E11E84FE6E005002E7 /* MasterViewController.m */,
@@ -223,6 +227,15 @@
 				D42035E41E84FE6E005002E7 /* QMapRouteDemoViewController.m */,
 			);
 			path = RouteDemo;
+			sourceTree = "<group>";
+		};
+		D42035EA1E88FA3A005002E7 /* AnnotationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D42035EB1E88FA3A005002E7 /* QMapAnnotationDemoViewController.h */,
+				D42035EC1E88FA3A005002E7 /* QMapAnnotationDemoViewController.m */,
+			);
+			path = AnnotationDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +445,7 @@
 				6003F59E195388D20070C39A /* QMapAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				D42035E71E84FE6E005002E7 /* QMapRouteDemoViewController.m in Sources */,
+				D42035ED1E88FA3A005002E7 /* QMapAnnotationDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

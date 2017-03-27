@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.menuList = @[@"基本地图功能",@"路线Overlay"];
+    self.menuList = @[@"基本地图功能",@"路线Overlay",@"Annotation"];
 }
 
 
@@ -77,6 +77,9 @@
             break;
         case 1:
             [self performSegueWithIdentifier:@"ShowRouteDemoIdentifier" sender:nil];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"ShowAnnotationDemoIdentifier" sender:nil];
             break;
         default:
             break;
