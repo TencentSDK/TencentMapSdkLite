@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "TencentMapSdkLite"
-s.version          = "2.0.0.00.02"
+s.version          = "2.0.0.00.03"
 s.summary          = "This is TencentMapSdk Lite."
 s.description      = 'The Map Software develop kit.'
 s.homepage         = "https://github.com/TencentSDK/TencentMapSdkLite"
@@ -19,7 +19,7 @@ s.author           = { "eximpression" => "ex_impression@hotmail.com" }
 s.source           = { :git => "https://github.com/TencentSDK/TencentMapSdkLite.git", :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-s.platform     = :ios, '8.0'
+s.platform     = :ios, '7.0'
 s.requires_arc = true
 s.source_files = 'TencentMapSdkLite/Classes/**/*'
 s.vendored_libraries = [

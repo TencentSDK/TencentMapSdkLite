@@ -613,12 +613,6 @@
 - (QCoordinateRegion)convertRect:(CGRect)rect toRegionFromView:(UIView *)view;
 
 /**
- * 获取反转偏移坐标
- * return 转换后的坐标
- **/
--(CLLocationCoordinate2D)coordinateOffset:(CLLocationCoordinate2D)coordinate;
-
-/**
  * 在当前缩放级别下，基于地图中心点，1 sreen point对应的距离
  * @return 对应的距离(单位为米)
  */
@@ -626,9 +620,9 @@
 
 /**
  * 获取反转偏移坐标
- * @param coordinate 火星坐标
- * @return 转换后的坐标
- */
+ * @param coordinate 原始经纬度(WGS84)
+ * @return 转换后的坐标(GCJ02)
+ **/
 +(CLLocationCoordinate2D)coordinateOffset:(CLLocationCoordinate2D)coordinate;
 
 #pragma mark - Annotation

@@ -32,8 +32,9 @@ typedef NS_ENUM(NSUInteger, QMUserTrackingMode) {
 
 typedef NS_ENUM(NSInteger, QCoordinateType)
 {
-    QCoordinateTypeWGS84     = 1, // 标准的GPS坐标
-    QCoordinateTypeGCJ02,         // 标准GPS坐标上加GCJ02偏移算法.
+    QCoordinateTypeGCJ02        = 0 ,        // 标准GPS坐标上加GCJ02偏移算法.
+    QCoordinateTypeWGS84        = 1, // 标准的GPS坐标
+    
 };
 
 typedef NS_ENUM(NSUInteger, QMapLanguage) {
@@ -127,6 +128,8 @@ typedef NS_ENUM (NSInteger,QMapAnimationCurveType)
 typedef NS_ENUM (NSInteger,QMapThirdPartyType)
 {
     QMapThirdPartyTypeDefault, //default
+    QMapThirdPartyTypeMeituan, //美团
+    QMapThirdPartyTypeMobike,   //摩拜
 };
 
 //定义底图蒙层层级

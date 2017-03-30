@@ -42,4 +42,15 @@
  * 定位精度圈颜色
  */
 @property(nonatomic,strong)UIColor* circleColor;
+
+/**
+ * 重置位置图片到默认，包括非导航下、导航和定位失败的图标
+ */
+-(void) resetLocationImages;
+
+/**
+ * 重置光圈颜色
+ */
+-(void) resetCircleColor;
+
 @end
