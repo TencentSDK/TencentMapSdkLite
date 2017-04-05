@@ -339,14 +339,29 @@
 @property (nonatomic) QMUserTrackingMode userTrackingMode;
 
 /**
- * 设备更新位置信息的最小距离
+ * 设备更新位置信息的最小距离，默认是kCLDistanceFilterNone
  */
 @property(assign, nonatomic) CLLocationDistance distanceFilter;
 
 /**
- * 位置数据的精度
+ * 位置数据的精度,默认是kCLLocationAccuracyBest
  */
 @property(assign, nonatomic) CLLocationAccuracy desiredAccuracy;
+
+/**
+ * 设置当朝向改变时，每隔多少度调用一次, 默认是1度
+ * 只有当设备方向的改变值超过该属性值时才激发delegate的方法。
+ */
+@property(nonatomic, assign) CLLocationDegrees headingFilter;
+
+/**
+ * 是否允许后台定位。默认为 NO。
+ * iOS 9.0 以上用户需要设置该选项并且在info.list里面Background Modes 中的 Location updates 处于选中状态才可以使用后台定位权限。
+ * iOS 9.0之前可以直接申请总是使用的权限来获得后台定位。
+ * 设置为 YES 的时候必须保证 Background Modes 中的 Location updates 处于选中状态，否则会抛出异常。
+ */
+@property (nonatomic, assign) BOOL allowsBackgroundLocationUpdates;
+
 
 /**
  * 设定罗盘模式
@@ -636,6 +651,11 @@
  * 当前地图View的已经添加的标注数组
  */
 @property(nonatomic, readonly) NSArray *annotations;
+
+/**
+ * 当前选中的annotations
+ */
+@property (nonatomic, readonly) NSArray<id<QAnnotation>> *selectedAnnotations;
 
 /**
  * 向地图窗口添加标注，需要实现QMapViewDelegate的-mapView:viewForAnnotation:函数来生成标注对应的View
@@ -1123,7 +1143,7 @@
  * 地图区域改变完成后会调用此接口,如果是由手势触发，当触摸结束且地图region改变的动画结束后才会触发此回调
  * @param mapView 地图View
  * @param animated 是否动画
- * @param bGesture region变化结束的时候手指仍然在屏幕上
+ * @param bGesture region变化是否由手势触发
  */
 - (void)mapView:(QMapView *)mapView regionDidChangeAnimated:(BOOL)animated gesture:(BOOL)bGesture;
 
@@ -1183,7 +1203,6 @@
  *@param bFromHeading 是否为heading 变化触发，如果为location变化触发,则为NO
  */
 - (void)mapView:(QMapView *)mapView didUpdateUserLocation:(QUserLocation *)userLocation sender:(BOOL)bFromHeading;
-
 /**
  * 定位失败后，会调用此函数
  * @param mapView 地图View
@@ -1272,5 +1291,11 @@
  */
 - (void)mapView:(QMapView*)mapView didChangeScaleAnimated:(BOOL)animated;
 
+/**
+ * 点击地图空白区域回调
+ * @param mapView  地图实例
+ * @param coordinate 点击处的经纬度
+ */
+-(void)mapView:(QMapView *)mapView didTapAtCoordinate:(CLLocationCoordinate2D)coordinate;
 @end
 
