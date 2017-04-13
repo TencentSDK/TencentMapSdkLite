@@ -15,7 +15,6 @@
 
 #define DRAW_TEXT_FLAG @"drawText:"
 
-@class QMAnnotationView;
 //end
 /**
  *QAnnotationView:标注view
@@ -31,7 +30,7 @@ typedef enum:NSUInteger{
      * 4 5 6
      * 1 2 3
      */
-    KIMAGE_DRAW_MODE_NONE = 0, // 等于 KIMAGE_MIDDLE_CENTER_MODE
+    KIMAGE_DRAW_MODE_NONE = 0, // 当设置的anchorPoint不符合时
     KIMAGE_BOTTOM_LEFT_MODE = 1,
     KIMAGE_BOTTOM_CENTER_MODE = 2,
     KIMAGE_BOTTOM_RIGHT_MODE = 3,
@@ -43,7 +42,6 @@ typedef enum:NSUInteger{
     KIMAGE_TOP_RIGHT_MODE = 9 ,
 }ImageDrawMode;
 //end
-@property (nonatomic, strong) QMAnnotationView * annotationViewInternal;
 /**
  *初始化并返回一个annotation view
  *@param annotation 关联的annotation对象
@@ -63,45 +61,73 @@ typedef enum:NSUInteger{
 
 /**关联的annotation**/
 @property (nonatomic, strong) id <QAnnotation> annotation;
+
+/**
+ * 是否添加为UIView的subview, 如果为NO则通过OpenGL渲染
+ * 默认为NO
+ */
+@property (nonatomic, assign)BOOL addAsSubview;
+
 /**
  *下落动画
  */
 @property(nonatomic) BOOL animatesDrop;
+
 /**annotation view显示的图像名称,必须提供图片的扩展名**/
 @property (nonatomic, strong) NSString *imageName;
+
 /**annotation view显示的图像,如果设置了imageIcon,imageName 的设置
  将无效,如果先设置imageName,设置imageIcon将覆盖imageName的设置**/
 @property(nonatomic,strong)UIImage* imageIcon;
-/**annotation view显示选中的图像名称**/
-@property (nonatomic, strong) NSString *selectedImageName;
-/**当前图片与坐标点的位置关系 需要先设置imageName再设置drawMode**/
+
+/**
+ * 快速设置锚点位置, 默认为KIMAGE_MIDDLE_CENTER_MODE
+ */
 @property (nonatomic,assign) ImageDrawMode mDrawMode;
-/**annotation image 的锚点。当ImageDrawMode 不能满足要求时可以设置此属性**/
+
+/**
+ * annotation image 的锚点。当ImageDrawMode 不能满足要求时可以设置此属性
+ * 取值为(0~1),如果不设置,默认为(0.5,0.5),对应于KIMAGE_MIDDLE_CENTER_MODE
+ */
 @property(nonatomic,assign)CGPoint anchorPoint;
 
-/**annotation显示优先级,优先级最高是1，值越大优先级越低，默认0则不做避让处理**/
-@property(nonatomic, assign) NSInteger dispLevel;//display Priority
+/**
+ * annotation显示优先级,默认是0,数值越大优先级越高
+ * 当addAsSubview为NO时有效
+ */
+@property(nonatomic, assign) NSUInteger dispLevel;//display Priority
 
-/**annotation的气泡是否翻转**/
+/**
+ * annotation的气泡是否翻转
+ * 当addAsSubview为NO时有效
+ */
 @property(nonatomic, assign, readonly) BOOL calloutViewIsUnder;
+
 /**
  * 气泡是否翻转, 默认是NO，禁止气泡翻转
+ * 当addAsSubview为NO时有效
  */
 @property(nonatomic, assign) BOOL calloutViewCanUnder;
 
 /**
- *默认情况下, 弹出的气泡位于view正中上方，可以设置calloutOffset改变view的位置，
- *正的偏移使view朝右下方移动，负的朝左上方，单位是像素
- ***/
+ * 默认情况下, 弹出的气泡位于view正中上方，可以设置calloutOffset改变view的位置，
+ * 正的偏移使view朝右下方移动，负的朝左上方，单位是像素
+ */
 @property (nonatomic) CGPoint calloutOffset;
 
-/**默认为YES,当为NO时view忽略触摸事件**/
+/**
+ * 默认为YES,当为NO时view忽略触摸事件
+ */
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 
-/**默认为NO,这个属性会自动被设置或重置.**/
+/**
+ * 默认为NO,这个属性会自动被设置或重置
+ */
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 
-/**默认为NO,当view被点中时被设为YES,用户不要直接设置这个属性.**/
+/**
+ * 默认为NO,当view被点中时被设为YES,用户不要直接设置这个属性
+ */
 @property (nonatomic, getter=isSelected) BOOL selected;
 
 /**
@@ -114,19 +140,39 @@ typedef enum:NSUInteger{
 
 - (void)setCalloutViewIsUnder:(BOOL)isUnder;
 
-/**当为YES时，view被选中时会弹出气泡，annotation必须实现了title这个方法,如果title为空，则会置为NO**/
+/**
+ * 当为YES时，view被选中时会弹出气泡，annotation必须实现了title这个方法,如果title为空，则会置为NO
+ */
 @property (nonatomic) BOOL canShowCallout;
-/**当为YES时，annotationView的callout在显示时自动滚动到可视范围内，如果为NO,则不滚动, 默认位YES**/
+
+/**
+ * 当为YES时，annotationView的callout在显示时自动滚动到可视范围内，如果为NO,则不滚动, 默认位YES
+ */
 @property(nonatomic,assign)BOOL canCalloutScrollToVisible;
-/**显示在气泡左侧的view**/
+
+/**
+ * 显示在气泡左侧的view
+ */
 @property (strong, nonatomic) UIView *leftCalloutAccessoryView;
 
-/**显示在气泡右侧的view**/
+/**
+ * 显示在气泡右侧的view
+ */
 @property (strong, nonatomic) UIView *rightCalloutAccessoryView;
-/****/
+
+/**
+ * 旋转角度,addAsSubview = YES的时候设置无效
+ */
 @property(nonatomic, assign)CGFloat angle;
+
+/**
+ * alpha值,addAsSubview = YES的时候设置无效
+ */
 @property(nonatomic, assign)CGFloat alpha;
-/*文字避让*/
+
+/**
+ * 文字避让 addAsSubview = YES的时候设置无效
+ */
 @property(nonatomic, assign)BOOL avoidAnnotation;
 @end
 

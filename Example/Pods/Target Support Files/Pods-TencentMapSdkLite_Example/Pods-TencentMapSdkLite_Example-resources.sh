@@ -74,9 +74,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "../../TencentMapSdkLite/Bundles/RELEASENOTE.md"
   install_resource "../../TencentMapSdkLite/Bundles/SOSOMAPRES.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "../../TencentMapSdkLite/Bundles/RELEASENOTE.md"
   install_resource "../../TencentMapSdkLite/Bundles/SOSOMAPRES.bundle"
 fi
 

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "TencentMapSdkLite"
-s.version          = "2.0.0.00.05"
+s.version          = "2.0.0.00.06"
 s.summary          = "This is TencentMapSdk Lite."
 s.description      = 'The Map Software develop kit.'
 s.homepage         = "https://github.com/TencentSDK/TencentMapSdkLite"
@@ -26,7 +26,7 @@ s.vendored_libraries = [
 'TencentMapSdkLite/Library/libQMapKitLite.a'
 ]
 s.public_header_files = 'TencentMapSdkLite/Classes/Headers/*.h'
-s.resources = 'TencentMapSdkLite/Bundles/SOSOMAPRES.bundle'
+s.resources = 'TencentMapSdkLite/Resources/*'
 
 s.frameworks = 'SystemConfiguration','UIKit','CoreText','OpenGLES','QuartzCore','CoreGraphics','CoreLocation','CoreTelephony', 'Accelerate','ImageIO'
 s.library = 'z','stdc++','stdc++.6.0.9','sqlite3'

@@ -70,6 +70,11 @@
 @property(nonatomic, assign) BOOL showsCompass;
 
 /**
+ * 设定是否显示比例尺
+ */
+@property(nonatomic, assign) BOOL hideScaleView;
+
+/**
  * 设置地图语言
  */
 @property(nonatomic, assign) QMapLanguage mapLanguage;
@@ -730,7 +735,7 @@
 - (void)deselectAnnotation:(id <QAnnotation>)annotation animated:(BOOL)animated;
 
 /**
- * 更新annotation的image和锚点
+ * 更新annotation的image和锚点,只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation
  * @param imageName 更新的图片,必须带有扩展名
  * @param drawMode 图片的AnchorPoint
@@ -738,8 +743,9 @@
 -(void)updateAnnotation:(id<QAnnotation>)annotation
               imageName:(NSString*)imageName
                drawMode:(ImageDrawMode)drawMode;
+
 /**
- * 更新annotation的image和锚点
+ * 更新annotation的image和锚点,只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation
  * @param imageIcon 更新的图片
  * @param drawMode 图片的AnchorPoint
@@ -757,6 +763,7 @@
 
 /**
  * 更新annotation的坐标,若要同时更新角度，请使用updateAnnotation: coordinate:angle:duration:  animated: 方法
+ * 只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation
  * @param coordinate 移动后的坐标点
  * @param duration 动画持续的时间
@@ -767,7 +774,7 @@
                duration: (NSTimeInterval)duration
                animated:(BOOL) bAnimated;
 /**
- * 更新annotation的旋转角度
+ * 更新annotation的旋转角度,只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation annotation对应的AnnotationView的ImageDrawMode 必须为KIMAGE_MIDDLE_CENTER_MODE
  * @param angle 旋转角度
  */
@@ -775,6 +782,7 @@
 
 /**
  * 更新annotation的旋转角度 ,若要同时更新位置，请使用updateAnnotation: coordinate:angle:duration:  animated: 方法
+ * 只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation annotation对应的AnnotationView的ImageDrawMode 必须为KIMAGE_MIDDLE_CENTER_MODE
  * @param angle 旋转角度
  * @param duration 动画持续的时间
@@ -787,6 +795,7 @@
 
 /**
  * 更新annotation的位置和旋转角度
+ * 只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation annotation对应的AnnotationView的ImageDrawMode 必须为KIMAGE_MIDDLE_CENTER_MODE
  * @param coordinate 移动后的坐标点
  * @param angle 旋转角度
@@ -801,6 +810,7 @@
 
 /**
  * 更新annotation的位置和旋转角度
+ * 只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation annotation对应的AnnotationView的ImageDrawMode 必须为KIMAGE_MIDDLE_CENTER_MODE
  * @param angle 旋转角度
  * @param duration 动画持续的时间
@@ -814,7 +824,7 @@
              completion:(void (^)(BOOL finished))completion;
 
 /**
- * 更新annotation的位置和旋转角度
+ * 更新annotation的位置和旋转角度, 只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation annotation对应的AnnotationView的ImageDrawMode 必须为KIMAGE_MIDDLE_CENTER_MODE
  * @param mapPoint 地图投影之后的平面坐标点
  * @param angle 旋转角度
@@ -828,8 +838,9 @@
                duration: (NSTimeInterval)duration
                animated:(BOOL) bAnimated
              completion:(void (^)(BOOL finished))completion;
+
 /**
- * 更新annotation的位置和旋转角度
+ * 更新annotation的位置和旋转角度, 只对addAsSubview为N0的annotationView有效
  * @param coordinate 移动后的坐标点
  * @param annotation 要设定的annotation annotation对应的AnnotationView的ImageDrawMode 必须为KIMAGE_MIDDLE_CENTER_MODE
  * @param angle 旋转角度
@@ -843,15 +854,16 @@
                duration: (NSTimeInterval)duration
                animated:(BOOL) bAnimated
              completion:(void (^)(BOOL finished))completion;
+
 /**
- * 更新annotation的alpha值
+ * 更新annotation的alpha值,只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation 
  * @param alpha 目标alpha值
  */
 - (void)updateAnnotation:(id<QAnnotation>)annotation alpha:(CGFloat)alpha;
 
 /**
- * 更新annotation的alpha值
+ * 更新annotation的alpha值,只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation
  * @param alpha 目标alpha值
  * @param duration 动画持续的时间
@@ -863,14 +875,14 @@
                 animated:(BOOL)bAnimated;
 
 /**
- * 更新annotation的dispLevel
+ * 更新annotation的dispLevel,只对addAsSubview为N0的annotationView有效
  * @param annotation 要设定的annotation
  * @param dispLevel annotation的优先级
  */
-- (void)updateAnnotationDispLevel:(id<QAnnotation>)annotation dispLevel:(int)dispLevel;
+- (void)updateAnnotationDispLevel:(id<QAnnotation>)annotation dispLevel:(NSUInteger)dispLevel;
 
 /**
- * 按比例缩放annotationView
+ * 按比例缩放annotationView,只对addAsSubview为N0的annotationView有效
  * @param scale 放大的比例
  * @param duration 动画持续的时间
  * @param delay 延迟运行动画的时间
@@ -960,21 +972,21 @@
 
 /**
  * 更新routeOverlayGroup的dispLevel，同Annotation的DispLevel一样
- * 即 默认不设置，1，2，3，4 ....优先级依次降低
+ * 即 默认为0,1，2，3，4 ....优先级依次增加
  * 2.0的annotation, mapMask, routeOverlay 都有优先级的概念并且优先级可以相互影响
  * routeOverlayGroup 需要更新的路线组信息
  * dispLevel 优先级
  */
-- (void)updateRouteOverlayGroup:(QRouteOverlayGroup*)routeOverlayGroup dispLevel: (int)dispLevel;
+- (void)updateRouteOverlayGroup:(QRouteOverlayGroup*)routeOverlayGroup dispLevel: (NSUInteger)dispLevel;
 
 /**
  * 更新routeOverlayGroup的dispLevel，同Annotation的DispLevel一样
- * 即 默认不设置，1，2，3，4 ....优先级依次降低
+ * 即 默认为0,1，2，3，4 ....优先级依次增加
  * 2.0的annotation, mapMask, routeOverlay 都有优先级的概念并且优先级可以相互影响
  * groupIndex routeOverlayGroup 的groupIndex
  * dispLevel 优先级
  */
-- (void)updateRouteOverlayGroupIndex:(NSInteger)groupIndex dispLevel: (int)dispLevel;
+- (void)updateRouteOverlayGroupIndex:(NSInteger)groupIndex dispLevel: (NSUInteger)dispLevel;
 
 /**
  * 更新routeOverlayGroup中带箭头的routeOverlay箭头的spacing,间距会随着地图的放大缩小会在一定范围内变化，变化幅度为spacing 值的0.5 ~ 1.0倍 之间

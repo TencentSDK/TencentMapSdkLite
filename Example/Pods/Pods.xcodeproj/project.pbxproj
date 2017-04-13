@@ -1,785 +1,2359 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		1270C00190C2608CDA1ED82E6D117760 /* QUserLocationView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D7EECD1C4038215803784C97AA45A1 /* QUserLocationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15BAC6F7213C147B805CDA55D29ED338 /* QOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = E3749EFA72D0865F58D0FA64A277A4E4 /* QOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DF6318AD3F29CAB08C54970E662C9B8 /* QPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = AB119D7DF04E0499E2D7410365BD49A9 /* QPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EC09C358F531F478374D97007999DF6 /* Pods-TencentMapSdkLite_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32A9EF1CC7FB5A824F82FCA5960592 /* Pods-TencentMapSdkLite_Example-dummy.m */; };
-		248EFDBAE58217FD6C7A79193E018705 /* QMultiPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = A422792859BC3FD2BBFE913FBCD6F67C /* QMultiPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26E4DA96215D06A1B4CBA0B0B7826A5B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7462426D8737A3E796D333EB60115 /* ImageIO.framework */; };
-		307BD875CFD4962AF7637CB24AD06939 /* QPolygonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F488B0C085D2E3DFE3527E3B2411859 /* QPolygonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35015E0F4B99C60FB70CB9FA11525ADD /* QAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A60277F4845B4B533FFCBA582C36AC /* QAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E9120E5D89E1BDB52648D851C339434 /* QCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D880BFA84A0377A061662D475EF0E5 /* QCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		406A93E7B3AD632D087912F11D0C53CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */; };
-		48216F0E868D70232F1681448B9A1434 /* QGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6DCD7605CE6A9FE9DFA973FC3FB3B6 /* QGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F9046136D7D357717B31B68FC3C456D /* QAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 517BF617BD020700D7E70BBEBAA810BF /* QAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		548B1743C210CD850ED69033DC774C83 /* QRouteInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BFDE9E2D6C21CF1DD9B2E2E87851BF /* QRouteInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54F8D63F0A460E106E7ABC594D3AC92C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */; };
-		59F172878CB7FF66F41B7300BD6B6673 /* QTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD35964587ECABCED8922E2C40B8920 /* QTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C2CF542A8211D2ACA01B11B2556B0F4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4584FCD8E52BECCE2FC03945A2209E /* CoreLocation.framework */; };
-		5E0674F7FC1755D9CD969644D8934755 /* QOverlayPathView.h in Headers */ = {isa = PBXBuildFile; fileRef = 02174FAA4E9D01A4C224B65856A6CE52 /* QOverlayPathView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BE172087160CBBE2F84C7733DFAE40C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB6A3BE196D0312692651DD12FA67BE /* QuartzCore.framework */; };
-		7251F5471ABE34FB27057D0F5FAB476F /* QPinAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D564D744273DD990627AAFA8348F3C /* QPinAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73D8399783C9878956BFF85E41FE9515 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1A7EAEB6297EFD7DA2393DE9EA868F /* UIKit.framework */; };
-		77A2B2DEA28FCAF93079A087C444EBB8 /* TencentMapSdkLite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36E8634339748B87B0D7C97F29C96A /* TencentMapSdkLite-dummy.m */; };
-		77B6AF1932CB13E50186A139E80DE27E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B060BE6730F20C87E2D57164BAA9CF44 /* CoreGraphics.framework */; };
-		7BF00EC46CB1F39FA4EA97AFB871A845 /* QUserLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = F70A921C70E7F70A88ECE5C19D62588E /* QUserLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8649C85A00F19953BBE621AC304BF66C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F9A459A77B0F0EA0BDE208B6DF5110 /* ReplaceMe.m */; };
-		9FACB90FABE4269BC2565F37BF4CC087 /* QMapKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A97C74CDD750C0E0573333ED6FD6935 /* QMapKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1C08EBA6B3F7380DFA6C9586B964302 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8086A3E55758994AB2ED9EEFC41C3F24 /* Accelerate.framework */; };
-		A7AD72D6AA2BC894C690AF4D46B0844C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192E33207E454FD17C94B1A60C943028 /* CoreTelephony.framework */; };
-		AE2A7798E07C79D318155CE9098E8CBB /* QCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF14B675E92D5B9717B1A09B781BA6B /* QCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8E85FF84EA3D127D74B2A9E375F652C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */; };
-		B9071F3FF78BEF5AC766F1AE5F19015F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A65F2DA2A02C8281CD43107B9155C2 /* SystemConfiguration.framework */; };
-		BF638DFF8F297B8196675990B5090F83 /* QTextAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AF47870E1FAAE6B4843137A615E406 /* QTextAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6E79E3D39FB699A79780A2AF441CDF4 /* QMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 876AC124F9B1353396863800C1D2D5A9 /* QMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8814EF5FE8D6D32DD0544B16A95E591 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC2415F1D98CB8632C719084FA3852 /* OpenGLES.framework */; };
-		C8DA4A8032A3E5B8088E75C308CD5996 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5583ACEED09B2A87C7B17809EBB2611 /* CoreText.framework */; };
-		D1929A070926ECA09502DADF7FA9FE77 /* QOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0295E60AFD627985646FD9302FB7234D /* QOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5BC4EC659E05C1AF365FEBEC1B1836F /* QAppKeyCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 5977188C7A10CB1C682308B4BCEC86FA /* QAppKeyCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8C4198A9B3D08481920188C3D9B05D1 /* QShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0F09FF5D963A66B8D3617E978875DE /* QShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC48479311AD6E96EF510862AFAA33C1 /* QPolyline.h in Headers */ = {isa = PBXBuildFile; fileRef = AC41C646CA91EE919433937EEC9B7407 /* QPolyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE16FDFC87C413C16451A599A9D43D52 /* Pods-TencentMapSdkLite_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 428783272EEA5B20A4E3C738781B826A /* Pods-TencentMapSdkLite_Tests-dummy.m */; };
-		E16139A94C26BE35146373E238B6F433 /* QPolygonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = FD7B7EAEE5D7417F7793EED8D2413461 /* QPolygonUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECC5C6F334067AECE30831F5B430C620 /* QPolylineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7154EEDB8012CED55900BD1959101D4E /* QPolylineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1AA0D1867093B863ED98C3FD3735C4D /* QPointAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F34CDECC6E2973B7CE9BED06111FC0B /* QPointAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3FA3A7DABE8C03237E49AE13E473396 /* QTextAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6038108515B50BF1417A01BD03692C16 /* QTextAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ACCA64420A70CDECD293AEB83A01988F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4BB801E19DD87C60505AEF4387C6DEF;
-			remoteInfo = TencentMapSdkLite;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		02174FAA4E9D01A4C224B65856A6CE52 /* QOverlayPathView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlayPathView.h; sourceTree = "<group>"; };
-		0295E60AFD627985646FD9302FB7234D /* QOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlayView.h; sourceTree = "<group>"; };
-		055C6FEC3EBD37EFB4B5B64B0640312A /* libPods-TencentMapSdkLite_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TencentMapSdkLite_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		06870429616EF405BD1CC62BD0A7CE3C /* Pods-TencentMapSdkLite_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0AF14B675E92D5B9717B1A09B781BA6B /* QCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QCircle.h; sourceTree = "<group>"; };
-		1445331765DBB8D721B8F16A52726C13 /* Pods-TencentMapSdkLite_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Example-resources.sh"; sourceTree = "<group>"; };
-		187E63D05EBCEFCAB63EFFBE4AE48134 /* Pods-TencentMapSdkLite_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Tests-resources.sh"; sourceTree = "<group>"; };
-		192E33207E454FD17C94B1A60C943028 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		1B4584FCD8E52BECCE2FC03945A2209E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		1D0F09FF5D963A66B8D3617E978875DE /* QShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QShape.h; sourceTree = "<group>"; };
-		1F488B0C085D2E3DFE3527E3B2411859 /* QPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygonView.h; sourceTree = "<group>"; };
-		22C7462426D8737A3E796D333EB60115 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		2A1B58D64AB2997A56A723988E3FBC5E /* Pods-TencentMapSdkLite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2DCD21E756C8A765876364C52307F24A /* Pods-TencentMapSdkLite_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2E36E8634339748B87B0D7C97F29C96A /* TencentMapSdkLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TencentMapSdkLite-dummy.m"; sourceTree = "<group>"; };
-		37AF47870E1FAAE6B4843137A615E406 /* QTextAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTextAnnotation.h; sourceTree = "<group>"; };
-		3A97C74CDD750C0E0573333ED6FD6935 /* QMapKitLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMapKitLite.h; sourceTree = "<group>"; };
-		428783272EEA5B20A4E3C738781B826A /* Pods-TencentMapSdkLite_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TencentMapSdkLite_Tests-dummy.m"; sourceTree = "<group>"; };
-		42F9A459A77B0F0EA0BDE208B6DF5110 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
-		4856BD1A8B51AE347E483B12D1A1DD1A /* Pods-TencentMapSdkLite_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TencentMapSdkLite_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4CB6A3BE196D0312692651DD12FA67BE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		4FD35964587ECABCED8922E2C40B8920 /* QTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTypes.h; sourceTree = "<group>"; };
-		517BF617BD020700D7E70BBEBAA810BF /* QAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAnnotationView.h; sourceTree = "<group>"; };
-		53DBB142C53B3323DB70123B2A322633 /* libTencentMapSdkLite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTencentMapSdkLite.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5977188C7A10CB1C682308B4BCEC86FA /* QAppKeyCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAppKeyCheck.h; sourceTree = "<group>"; };
-		5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5F34CDECC6E2973B7CE9BED06111FC0B /* QPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPointAnnotation.h; sourceTree = "<group>"; };
-		6038108515B50BF1417A01BD03692C16 /* QTextAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QTextAnnotationView.h; sourceTree = "<group>"; };
-		65A60277F4845B4B533FFCBA582C36AC /* QAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QAnnotation.h; sourceTree = "<group>"; };
-		68A65F2DA2A02C8281CD43107B9155C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		7154EEDB8012CED55900BD1959101D4E /* QPolylineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolylineView.h; sourceTree = "<group>"; };
-		71FC2415F1D98CB8632C719084FA3852 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
-		8086A3E55758994AB2ED9EEFC41C3F24 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		844A76D3CF5A8FF30CE08BF4CFF953F2 /* Pods-TencentMapSdkLite_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TencentMapSdkLite_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		86D880BFA84A0377A061662D475EF0E5 /* QCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QCircleView.h; sourceTree = "<group>"; };
-		876AC124F9B1353396863800C1D2D5A9 /* QMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMapView.h; sourceTree = "<group>"; };
-		88BFDE9E2D6C21CF1DD9B2E2E87851BF /* QRouteInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QRouteInfo.h; sourceTree = "<group>"; };
-		88D564D744273DD990627AAFA8348F3C /* QPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPinAnnotationView.h; sourceTree = "<group>"; };
-		88F9C8CB20CC1075AF0E5C77C931F696 /* Pods-TencentMapSdkLite_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TencentMapSdkLite_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D32A9EF1CC7FB5A824F82FCA5960592 /* Pods-TencentMapSdkLite_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TencentMapSdkLite_Example-dummy.m"; sourceTree = "<group>"; };
-		8E3E65141010D4FB1F010DC59907C912 /* TencentMapSdkLite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TencentMapSdkLite.xcconfig; sourceTree = "<group>"; };
-		9301F49D74568C0798BB9E5C4AFF3A8C /* SOSOMAPRES.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = SOSOMAPRES.bundle; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		952D364EE25FFC0759A3583B3CC189AF /* TencentMapSdkLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TencentMapSdkLite-prefix.pch"; sourceTree = "<group>"; };
-		9CC3C2F2F23C041DB5C88E44DDD0B1E2 /* libPods-TencentMapSdkLite_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TencentMapSdkLite_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A422792859BC3FD2BBFE913FBCD6F67C /* QMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QMultiPoint.h; sourceTree = "<group>"; };
-		A78A485316614F137AEBBD10C4D5EC1F /* Pods-TencentMapSdkLite_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TencentMapSdkLite_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AB119D7DF04E0499E2D7410365BD49A9 /* QPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygon.h; sourceTree = "<group>"; };
-		AB6DCD7605CE6A9FE9DFA973FC3FB3B6 /* QGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QGeometry.h; sourceTree = "<group>"; };
-		AC41C646CA91EE919433937EEC9B7407 /* QPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolyline.h; sourceTree = "<group>"; };
-		B060BE6730F20C87E2D57164BAA9CF44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		B115ADEC6BCB912A9A68B29A3F2D79E3 /* Pods-TencentMapSdkLite_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BE1A7EAEB6297EFD7DA2393DE9EA868F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C5D7EECD1C4038215803784C97AA45A1 /* QUserLocationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QUserLocationView.h; sourceTree = "<group>"; };
-		D7218DE10CD36AF2791236AC2809AF18 /* Pods-TencentMapSdkLite_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TencentMapSdkLite_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E3749EFA72D0865F58D0FA64A277A4E4 /* QOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QOverlay.h; sourceTree = "<group>"; };
-		E5583ACEED09B2A87C7B17809EBB2611 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		F70A921C70E7F70A88ECE5C19D62588E /* QUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QUserLocation.h; sourceTree = "<group>"; };
-		FA6B3932CF549EC5FE6359CED31B3B2F /* Pods-TencentMapSdkLite_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TencentMapSdkLite_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FD7B7EAEE5D7417F7793EED8D2413461 /* QPolygonUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QPolygonUtil.h; sourceTree = "<group>"; };
-		FFA4F1E46603A602F06D98131440ABF1 /* libQMapKitLite.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libQMapKitLite.a; path = TencentMapSdkLite/Library/libQMapKitLite.a; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2FFE3355E29DE6C49B5FEABD73CF361A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1C08EBA6B3F7380DFA6C9586B964302 /* Accelerate.framework in Frameworks */,
-				77B6AF1932CB13E50186A139E80DE27E /* CoreGraphics.framework in Frameworks */,
-				5C2CF542A8211D2ACA01B11B2556B0F4 /* CoreLocation.framework in Frameworks */,
-				A7AD72D6AA2BC894C690AF4D46B0844C /* CoreTelephony.framework in Frameworks */,
-				C8DA4A8032A3E5B8088E75C308CD5996 /* CoreText.framework in Frameworks */,
-				B8E85FF84EA3D127D74B2A9E375F652C /* Foundation.framework in Frameworks */,
-				26E4DA96215D06A1B4CBA0B0B7826A5B /* ImageIO.framework in Frameworks */,
-				C8814EF5FE8D6D32DD0544B16A95E591 /* OpenGLES.framework in Frameworks */,
-				6BE172087160CBBE2F84C7733DFAE40C /* QuartzCore.framework in Frameworks */,
-				B9071F3FF78BEF5AC766F1AE5F19015F /* SystemConfiguration.framework in Frameworks */,
-				73D8399783C9878956BFF85E41FE9515 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C4FB2CA5A839BBC9FA1E5D1914FE1E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				406A93E7B3AD632D087912F11D0C53CC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ECD1DC5BF90F13E566A026B7E1BDE87D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54F8D63F0A460E106E7ABC594D3AC92C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0A0539FDABBA00A1D138D78D66BF2269 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9CC3C2F2F23C041DB5C88E44DDD0B1E2 /* libPods-TencentMapSdkLite_Example.a */,
-				055C6FEC3EBD37EFB4B5B64B0640312A /* libPods-TencentMapSdkLite_Tests.a */,
-				53DBB142C53B3323DB70123B2A322633 /* libTencentMapSdkLite.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2448BAC954ADE5CED6B5D1113D863B8F /* TencentMapSdkLite */ = {
-			isa = PBXGroup;
-			children = (
-				A53FCA41C674C3637CDDC3EC2B528A3C /* Classes */,
-			);
-			path = TencentMapSdkLite;
-			sourceTree = "<group>";
-		};
-		4B564DA53815E7FD8CE88A345332A689 /* Bundles */ = {
-			isa = PBXGroup;
-			children = (
-				9301F49D74568C0798BB9E5C4AFF3A8C /* SOSOMAPRES.bundle */,
-			);
-			path = Bundles;
-			sourceTree = "<group>";
-		};
-		59077D30693DC509A8FD6A7DF42780ED /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FFA4F1E46603A602F06D98131440ABF1 /* libQMapKitLite.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				DD00C4379B64E090C9F360C38D728145 /* Development Pods */,
-				EB57DDB3388FBC701046A1E93218737F /* Frameworks */,
-				0A0539FDABBA00A1D138D78D66BF2269 /* Products */,
-				FAA589F21A1684032791CDEF7B7C4589 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		85686DC38B8F5C4287714120749C541B /* TencentMapSdkLite */ = {
-			isa = PBXGroup;
-			children = (
-				59077D30693DC509A8FD6A7DF42780ED /* Frameworks */,
-				D915F28FBEAF985CA963AEAB123E81B5 /* Resources */,
-				A21DCA11E75238D5AF45E49B99B4C5F6 /* Support Files */,
-				2448BAC954ADE5CED6B5D1113D863B8F /* TencentMapSdkLite */,
-			);
-			name = TencentMapSdkLite;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		8BEA4FB3E87F5D88AA20DB18564EC842 /* Pods-TencentMapSdkLite_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				D7218DE10CD36AF2791236AC2809AF18 /* Pods-TencentMapSdkLite_Tests-acknowledgements.markdown */,
-				88F9C8CB20CC1075AF0E5C77C931F696 /* Pods-TencentMapSdkLite_Tests-acknowledgements.plist */,
-				428783272EEA5B20A4E3C738781B826A /* Pods-TencentMapSdkLite_Tests-dummy.m */,
-				4856BD1A8B51AE347E483B12D1A1DD1A /* Pods-TencentMapSdkLite_Tests-frameworks.sh */,
-				187E63D05EBCEFCAB63EFFBE4AE48134 /* Pods-TencentMapSdkLite_Tests-resources.sh */,
-				FA6B3932CF549EC5FE6359CED31B3B2F /* Pods-TencentMapSdkLite_Tests.debug.xcconfig */,
-				B115ADEC6BCB912A9A68B29A3F2D79E3 /* Pods-TencentMapSdkLite_Tests.release.xcconfig */,
-			);
-			name = "Pods-TencentMapSdkLite_Tests";
-			path = "Target Support Files/Pods-TencentMapSdkLite_Tests";
-			sourceTree = "<group>";
-		};
-		8FB461E3EF94FEBA97D4BCF4D9FD0939 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8086A3E55758994AB2ED9EEFC41C3F24 /* Accelerate.framework */,
-				B060BE6730F20C87E2D57164BAA9CF44 /* CoreGraphics.framework */,
-				1B4584FCD8E52BECCE2FC03945A2209E /* CoreLocation.framework */,
-				192E33207E454FD17C94B1A60C943028 /* CoreTelephony.framework */,
-				E5583ACEED09B2A87C7B17809EBB2611 /* CoreText.framework */,
-				5B4DCFDFA7ADA4BBDC7D4092C17F1E15 /* Foundation.framework */,
-				22C7462426D8737A3E796D333EB60115 /* ImageIO.framework */,
-				71FC2415F1D98CB8632C719084FA3852 /* OpenGLES.framework */,
-				4CB6A3BE196D0312692651DD12FA67BE /* QuartzCore.framework */,
-				68A65F2DA2A02C8281CD43107B9155C2 /* SystemConfiguration.framework */,
-				BE1A7EAEB6297EFD7DA2393DE9EA868F /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		9CA71488276E4E229BB472356B83BD8D /* Pods-TencentMapSdkLite_Example */ = {
-			isa = PBXGroup;
-			children = (
-				A78A485316614F137AEBBD10C4D5EC1F /* Pods-TencentMapSdkLite_Example-acknowledgements.markdown */,
-				844A76D3CF5A8FF30CE08BF4CFF953F2 /* Pods-TencentMapSdkLite_Example-acknowledgements.plist */,
-				8D32A9EF1CC7FB5A824F82FCA5960592 /* Pods-TencentMapSdkLite_Example-dummy.m */,
-				2DCD21E756C8A765876364C52307F24A /* Pods-TencentMapSdkLite_Example-frameworks.sh */,
-				1445331765DBB8D721B8F16A52726C13 /* Pods-TencentMapSdkLite_Example-resources.sh */,
-				2A1B58D64AB2997A56A723988E3FBC5E /* Pods-TencentMapSdkLite_Example.debug.xcconfig */,
-				06870429616EF405BD1CC62BD0A7CE3C /* Pods-TencentMapSdkLite_Example.release.xcconfig */,
-			);
-			name = "Pods-TencentMapSdkLite_Example";
-			path = "Target Support Files/Pods-TencentMapSdkLite_Example";
-			sourceTree = "<group>";
-		};
-		A21DCA11E75238D5AF45E49B99B4C5F6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E3E65141010D4FB1F010DC59907C912 /* TencentMapSdkLite.xcconfig */,
-				2E36E8634339748B87B0D7C97F29C96A /* TencentMapSdkLite-dummy.m */,
-				952D364EE25FFC0759A3583B3CC189AF /* TencentMapSdkLite-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TencentMapSdkLite";
-			sourceTree = "<group>";
-		};
-		A3C801AE12DF72E9D8396C9ED86F932D /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				65A60277F4845B4B533FFCBA582C36AC /* QAnnotation.h */,
-				517BF617BD020700D7E70BBEBAA810BF /* QAnnotationView.h */,
-				5977188C7A10CB1C682308B4BCEC86FA /* QAppKeyCheck.h */,
-				0AF14B675E92D5B9717B1A09B781BA6B /* QCircle.h */,
-				86D880BFA84A0377A061662D475EF0E5 /* QCircleView.h */,
-				AB6DCD7605CE6A9FE9DFA973FC3FB3B6 /* QGeometry.h */,
-				3A97C74CDD750C0E0573333ED6FD6935 /* QMapKitLite.h */,
-				876AC124F9B1353396863800C1D2D5A9 /* QMapView.h */,
-				A422792859BC3FD2BBFE913FBCD6F67C /* QMultiPoint.h */,
-				E3749EFA72D0865F58D0FA64A277A4E4 /* QOverlay.h */,
-				02174FAA4E9D01A4C224B65856A6CE52 /* QOverlayPathView.h */,
-				0295E60AFD627985646FD9302FB7234D /* QOverlayView.h */,
-				88D564D744273DD990627AAFA8348F3C /* QPinAnnotationView.h */,
-				5F34CDECC6E2973B7CE9BED06111FC0B /* QPointAnnotation.h */,
-				AB119D7DF04E0499E2D7410365BD49A9 /* QPolygon.h */,
-				FD7B7EAEE5D7417F7793EED8D2413461 /* QPolygonUtil.h */,
-				1F488B0C085D2E3DFE3527E3B2411859 /* QPolygonView.h */,
-				AC41C646CA91EE919433937EEC9B7407 /* QPolyline.h */,
-				7154EEDB8012CED55900BD1959101D4E /* QPolylineView.h */,
-				88BFDE9E2D6C21CF1DD9B2E2E87851BF /* QRouteInfo.h */,
-				1D0F09FF5D963A66B8D3617E978875DE /* QShape.h */,
-				37AF47870E1FAAE6B4843137A615E406 /* QTextAnnotation.h */,
-				6038108515B50BF1417A01BD03692C16 /* QTextAnnotationView.h */,
-				4FD35964587ECABCED8922E2C40B8920 /* QTypes.h */,
-				F70A921C70E7F70A88ECE5C19D62588E /* QUserLocation.h */,
-				C5D7EECD1C4038215803784C97AA45A1 /* QUserLocationView.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		A53FCA41C674C3637CDDC3EC2B528A3C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				42F9A459A77B0F0EA0BDE208B6DF5110 /* ReplaceMe.m */,
-				A3C801AE12DF72E9D8396C9ED86F932D /* Headers */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		D915F28FBEAF985CA963AEAB123E81B5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DA6DF4115E2A98783673039CC861DDA9 /* TencentMapSdkLite */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		DA6DF4115E2A98783673039CC861DDA9 /* TencentMapSdkLite */ = {
-			isa = PBXGroup;
-			children = (
-				4B564DA53815E7FD8CE88A345332A689 /* Bundles */,
-			);
-			path = TencentMapSdkLite;
-			sourceTree = "<group>";
-		};
-		DD00C4379B64E090C9F360C38D728145 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				85686DC38B8F5C4287714120749C541B /* TencentMapSdkLite */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		EB57DDB3388FBC701046A1E93218737F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8FB461E3EF94FEBA97D4BCF4D9FD0939 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FAA589F21A1684032791CDEF7B7C4589 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9CA71488276E4E229BB472356B83BD8D /* Pods-TencentMapSdkLite_Example */,
-				8BEA4FB3E87F5D88AA20DB18564EC842 /* Pods-TencentMapSdkLite_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		434A3794FA715CBF8CB0AA78D71498A2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35015E0F4B99C60FB70CB9FA11525ADD /* QAnnotation.h in Headers */,
-				4F9046136D7D357717B31B68FC3C456D /* QAnnotationView.h in Headers */,
-				D5BC4EC659E05C1AF365FEBEC1B1836F /* QAppKeyCheck.h in Headers */,
-				AE2A7798E07C79D318155CE9098E8CBB /* QCircle.h in Headers */,
-				3E9120E5D89E1BDB52648D851C339434 /* QCircleView.h in Headers */,
-				48216F0E868D70232F1681448B9A1434 /* QGeometry.h in Headers */,
-				9FACB90FABE4269BC2565F37BF4CC087 /* QMapKitLite.h in Headers */,
-				C6E79E3D39FB699A79780A2AF441CDF4 /* QMapView.h in Headers */,
-				248EFDBAE58217FD6C7A79193E018705 /* QMultiPoint.h in Headers */,
-				15BAC6F7213C147B805CDA55D29ED338 /* QOverlay.h in Headers */,
-				5E0674F7FC1755D9CD969644D8934755 /* QOverlayPathView.h in Headers */,
-				D1929A070926ECA09502DADF7FA9FE77 /* QOverlayView.h in Headers */,
-				7251F5471ABE34FB27057D0F5FAB476F /* QPinAnnotationView.h in Headers */,
-				F1AA0D1867093B863ED98C3FD3735C4D /* QPointAnnotation.h in Headers */,
-				1DF6318AD3F29CAB08C54970E662C9B8 /* QPolygon.h in Headers */,
-				E16139A94C26BE35146373E238B6F433 /* QPolygonUtil.h in Headers */,
-				307BD875CFD4962AF7637CB24AD06939 /* QPolygonView.h in Headers */,
-				DC48479311AD6E96EF510862AFAA33C1 /* QPolyline.h in Headers */,
-				ECC5C6F334067AECE30831F5B430C620 /* QPolylineView.h in Headers */,
-				548B1743C210CD850ED69033DC774C83 /* QRouteInfo.h in Headers */,
-				D8C4198A9B3D08481920188C3D9B05D1 /* QShape.h in Headers */,
-				BF638DFF8F297B8196675990B5090F83 /* QTextAnnotation.h in Headers */,
-				F3FA3A7DABE8C03237E49AE13E473396 /* QTextAnnotationView.h in Headers */,
-				59F172878CB7FF66F41B7300BD6B6673 /* QTypes.h in Headers */,
-				7BF00EC46CB1F39FA4EA97AFB871A845 /* QUserLocation.h in Headers */,
-				1270C00190C2608CDA1ED82E6D117760 /* QUserLocationView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		3F2E7C1EF03E2DBFECF1E0D01E80E999 /* Pods-TencentMapSdkLite_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 51B74BAAD8DD02B93035D0EBBF6652D2 /* Build configuration list for PBXNativeTarget "Pods-TencentMapSdkLite_Tests" */;
-			buildPhases = (
-				DA9398C3D13514E7274B5A880F50F902 /* Sources */,
-				8C4FB2CA5A839BBC9FA1E5D1914FE1E7 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-TencentMapSdkLite_Tests";
-			productName = "Pods-TencentMapSdkLite_Tests";
-			productReference = 055C6FEC3EBD37EFB4B5B64B0640312A /* libPods-TencentMapSdkLite_Tests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D4BB801E19DD87C60505AEF4387C6DEF /* TencentMapSdkLite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F6E0258E54169A5A06EBA8F820B8B898 /* Build configuration list for PBXNativeTarget "TencentMapSdkLite" */;
-			buildPhases = (
-				604651F24C25FF92119E88AC57A8153E /* Sources */,
-				2FFE3355E29DE6C49B5FEABD73CF361A /* Frameworks */,
-				434A3794FA715CBF8CB0AA78D71498A2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TencentMapSdkLite;
-			productName = TencentMapSdkLite;
-			productReference = 53DBB142C53B3323DB70123B2A322633 /* libTencentMapSdkLite.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DCDF9048C0F865453407D14ABAA3907A /* Pods-TencentMapSdkLite_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9BE22B2BB0264617A34E0328DD1FEBA /* Build configuration list for PBXNativeTarget "Pods-TencentMapSdkLite_Example" */;
-			buildPhases = (
-				36455536428D9F8815A4F6EF687C8C42 /* Sources */,
-				ECD1DC5BF90F13E566A026B7E1BDE87D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A25C36D04C80893B07CC95DFDEA20276 /* PBXTargetDependency */,
-			);
-			name = "Pods-TencentMapSdkLite_Example";
-			productName = "Pods-TencentMapSdkLite_Example";
-			productReference = 9CC3C2F2F23C041DB5C88E44DDD0B1E2 /* libPods-TencentMapSdkLite_Example.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0A0539FDABBA00A1D138D78D66BF2269 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				DCDF9048C0F865453407D14ABAA3907A /* Pods-TencentMapSdkLite_Example */,
-				3F2E7C1EF03E2DBFECF1E0D01E80E999 /* Pods-TencentMapSdkLite_Tests */,
-				D4BB801E19DD87C60505AEF4387C6DEF /* TencentMapSdkLite */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		36455536428D9F8815A4F6EF687C8C42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EC09C358F531F478374D97007999DF6 /* Pods-TencentMapSdkLite_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		604651F24C25FF92119E88AC57A8153E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8649C85A00F19953BBE621AC304BF66C /* ReplaceMe.m in Sources */,
-				77A2B2DEA28FCAF93079A087C444EBB8 /* TencentMapSdkLite-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA9398C3D13514E7274B5A880F50F902 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE16FDFC87C413C16451A599A9D43D52 /* Pods-TencentMapSdkLite_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A25C36D04C80893B07CC95DFDEA20276 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TencentMapSdkLite;
-			target = D4BB801E19DD87C60505AEF4387C6DEF /* TencentMapSdkLite */;
-			targetProxy = ACCA64420A70CDECD293AEB83A01988F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0F1EBA2B3717EB096E88E1AD021CC76A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E3E65141010D4FB1F010DC59907C912 /* TencentMapSdkLite.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TencentMapSdkLite/TencentMapSdkLite-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		50361EB421CAB5765582386ECDC83A4F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06870429616EF405BD1CC62BD0A7CE3C /* Pods-TencentMapSdkLite_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		635789794BC5C26B7A2EE2D0E73915BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B115ADEC6BCB912A9A68B29A3F2D79E3 /* Pods-TencentMapSdkLite_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		82014F5B84AF5EC5F4DA7E7E30EC659F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA6B3932CF549EC5FE6359CED31B3B2F /* Pods-TencentMapSdkLite_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		89AC263A7FD788179DE0083A664B639E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E3E65141010D4FB1F010DC59907C912 /* TencentMapSdkLite.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TencentMapSdkLite/TencentMapSdkLite-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DE192075448A58943E2BE824DED061C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A1B58D64AB2997A56A723988E3FBC5E /* Pods-TencentMapSdkLite_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
-				B7324857C38B065FEB1EEE3105C2367A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		51B74BAAD8DD02B93035D0EBBF6652D2 /* Build configuration list for PBXNativeTarget "Pods-TencentMapSdkLite_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82014F5B84AF5EC5F4DA7E7E30EC659F /* Debug */,
-				635789794BC5C26B7A2EE2D0E73915BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9BE22B2BB0264617A34E0328DD1FEBA /* Build configuration list for PBXNativeTarget "Pods-TencentMapSdkLite_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE192075448A58943E2BE824DED061C4 /* Debug */,
-				50361EB421CAB5765582386ECDC83A4F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F6E0258E54169A5A06EBA8F820B8B898 /* Build configuration list for PBXNativeTarget "TencentMapSdkLite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89AC263A7FD788179DE0083A664B639E /* Debug */,
-				0F1EBA2B3717EB096E88E1AD021CC76A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>02174FAA4E9D01A4C224B65856A6CE52</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QOverlayPathView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0295E60AFD627985646FD9302FB7234D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QOverlayView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>055C6FEC3EBD37EFB4B5B64B0640312A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-TencentMapSdkLite_Tests.a</string>
+			<key>path</key>
+			<string>libPods-TencentMapSdkLite_Tests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>06870429616EF405BD1CC62BD0A7CE3C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0A0539FDABBA00A1D138D78D66BF2269</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9CC3C2F2F23C041DB5C88E44DDD0B1E2</string>
+				<string>055C6FEC3EBD37EFB4B5B64B0640312A</string>
+				<string>53DBB142C53B3323DB70123B2A322633</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0AF14B675E92D5B9717B1A09B781BA6B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QCircle.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F1EBA2B3717EB096E88E1AD021CC76A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8E3E65141010D4FB1F010DC59907C912</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TencentMapSdkLite/TencentMapSdkLite-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1270C00190C2608CDA1ED82E6D117760</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C5D7EECD1C4038215803784C97AA45A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1445331765DBB8D721B8F16A52726C13</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15BAC6F7213C147B805CDA55D29ED338</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E3749EFA72D0865F58D0FA64A277A4E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>187E63D05EBCEFCAB63EFFBE4AE48134</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>192E33207E454FD17C94B1A60C943028</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreTelephony.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreTelephony.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>1B4584FCD8E52BECCE2FC03945A2209E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreLocation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreLocation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>1D0F09FF5D963A66B8D3617E978875DE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QShape.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1DF6318AD3F29CAB08C54970E662C9B8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AB119D7DF04E0499E2D7410365BD49A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1E2E087F694D9163F62241A90B738E75</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D36F5F567EC309000A73AC561866DBDF</string>
+				<string>C421D98446625A84D95F4CDC62AD4943</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Bundles</string>
+			<key>path</key>
+			<string>Bundles</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1EC09C358F531F478374D97007999DF6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8D32A9EF1CC7FB5A824F82FCA5960592</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1F488B0C085D2E3DFE3527E3B2411859</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QPolygonView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22C7462426D8737A3E796D333EB60115</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>ImageIO.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>2448BAC954ADE5CED6B5D1113D863B8F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A53FCA41C674C3637CDDC3EC2B528A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TencentMapSdkLite</string>
+			<key>path</key>
+			<string>TencentMapSdkLite</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>248EFDBAE58217FD6C7A79193E018705</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A422792859BC3FD2BBFE913FBCD6F67C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>26E4DA96215D06A1B4CBA0B0B7826A5B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>22C7462426D8737A3E796D333EB60115</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2A1B58D64AB2997A56A723988E3FBC5E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>59B042A655B7C20CBAB90E385BF4E4C7</string>
+				<string>B7324857C38B065FEB1EEE3105C2367A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2DCD21E756C8A765876364C52307F24A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2E36E8634339748B87B0D7C97F29C96A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TencentMapSdkLite-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2FFE3355E29DE6C49B5FEABD73CF361A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A1C08EBA6B3F7380DFA6C9586B964302</string>
+				<string>77B6AF1932CB13E50186A139E80DE27E</string>
+				<string>5C2CF542A8211D2ACA01B11B2556B0F4</string>
+				<string>A7AD72D6AA2BC894C690AF4D46B0844C</string>
+				<string>C8DA4A8032A3E5B8088E75C308CD5996</string>
+				<string>B8E85FF84EA3D127D74B2A9E375F652C</string>
+				<string>26E4DA96215D06A1B4CBA0B0B7826A5B</string>
+				<string>C8814EF5FE8D6D32DD0544B16A95E591</string>
+				<string>6BE172087160CBBE2F84C7733DFAE40C</string>
+				<string>B9071F3FF78BEF5AC766F1AE5F19015F</string>
+				<string>73D8399783C9878956BFF85E41FE9515</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>307BD875CFD4962AF7637CB24AD06939</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F488B0C085D2E3DFE3527E3B2411859</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>35015E0F4B99C60FB70CB9FA11525ADD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65A60277F4845B4B533FFCBA582C36AC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>36455536428D9F8815A4F6EF687C8C42</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1EC09C358F531F478374D97007999DF6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>37AF47870E1FAAE6B4843137A615E406</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QTextAnnotation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3A97C74CDD750C0E0573333ED6FD6935</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QMapKitLite.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E9120E5D89E1BDB52648D851C339434</key>
+		<dict>
+			<key>fileRef</key>
+			<string>86D880BFA84A0377A061662D475EF0E5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3F2E7C1EF03E2DBFECF1E0D01E80E999</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>51B74BAAD8DD02B93035D0EBBF6652D2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DA9398C3D13514E7274B5A880F50F902</string>
+				<string>8C4FB2CA5A839BBC9FA1E5D1914FE1E7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TencentMapSdkLite_Tests</string>
+			<key>productName</key>
+			<string>Pods-TencentMapSdkLite_Tests</string>
+			<key>productReference</key>
+			<string>055C6FEC3EBD37EFB4B5B64B0640312A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>406A93E7B3AD632D087912F11D0C53CC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5B4DCFDFA7ADA4BBDC7D4092C17F1E15</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>428783272EEA5B20A4E3C738781B826A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42F9A459A77B0F0EA0BDE208B6DF5110</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ReplaceMe.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>434A3794FA715CBF8CB0AA78D71498A2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35015E0F4B99C60FB70CB9FA11525ADD</string>
+				<string>4F9046136D7D357717B31B68FC3C456D</string>
+				<string>D5BC4EC659E05C1AF365FEBEC1B1836F</string>
+				<string>AE2A7798E07C79D318155CE9098E8CBB</string>
+				<string>3E9120E5D89E1BDB52648D851C339434</string>
+				<string>48216F0E868D70232F1681448B9A1434</string>
+				<string>9FACB90FABE4269BC2565F37BF4CC087</string>
+				<string>C6E79E3D39FB699A79780A2AF441CDF4</string>
+				<string>248EFDBAE58217FD6C7A79193E018705</string>
+				<string>15BAC6F7213C147B805CDA55D29ED338</string>
+				<string>5E0674F7FC1755D9CD969644D8934755</string>
+				<string>D1929A070926ECA09502DADF7FA9FE77</string>
+				<string>7251F5471ABE34FB27057D0F5FAB476F</string>
+				<string>F1AA0D1867093B863ED98C3FD3735C4D</string>
+				<string>1DF6318AD3F29CAB08C54970E662C9B8</string>
+				<string>E16139A94C26BE35146373E238B6F433</string>
+				<string>307BD875CFD4962AF7637CB24AD06939</string>
+				<string>DC48479311AD6E96EF510862AFAA33C1</string>
+				<string>ECC5C6F334067AECE30831F5B430C620</string>
+				<string>548B1743C210CD850ED69033DC774C83</string>
+				<string>D8C4198A9B3D08481920188C3D9B05D1</string>
+				<string>BF638DFF8F297B8196675990B5090F83</string>
+				<string>F3FA3A7DABE8C03237E49AE13E473396</string>
+				<string>59F172878CB7FF66F41B7300BD6B6673</string>
+				<string>7BF00EC46CB1F39FA4EA97AFB871A845</string>
+				<string>1270C00190C2608CDA1ED82E6D117760</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>48216F0E868D70232F1681448B9A1434</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AB6DCD7605CE6A9FE9DFA973FC3FB3B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4856BD1A8B51AE347E483B12D1A1DD1A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CB6A3BE196D0312692651DD12FA67BE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>4F9046136D7D357717B31B68FC3C456D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>517BF617BD020700D7E70BBEBAA810BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4FD35964587ECABCED8922E2C40B8920</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QTypes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50361EB421CAB5765582386ECDC83A4F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>06870429616EF405BD1CC62BD0A7CE3C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>517BF617BD020700D7E70BBEBAA810BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QAnnotationView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51B74BAAD8DD02B93035D0EBBF6652D2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>82014F5B84AF5EC5F4DA7E7E30EC659F</string>
+				<string>635789794BC5C26B7A2EE2D0E73915BD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>53DBB142C53B3323DB70123B2A322633</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libTencentMapSdkLite.a</string>
+			<key>path</key>
+			<string>libTencentMapSdkLite.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>548B1743C210CD850ED69033DC774C83</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88BFDE9E2D6C21CF1DD9B2E2E87851BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>54F8D63F0A460E106E7ABC594D3AC92C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5B4DCFDFA7ADA4BBDC7D4092C17F1E15</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>59077D30693DC509A8FD6A7DF42780ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FFA4F1E46603A602F06D98131440ABF1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5977188C7A10CB1C682308B4BCEC86FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QAppKeyCheck.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>59B042A655B7C20CBAB90E385BF4E4C7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGNING_REQUIRED</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_DEBUG=1</string>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>PROVISIONING_PROFILE_SPECIFIER</key>
+				<string>NO_SIGNING/</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>59F172878CB7FF66F41B7300BD6B6673</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4FD35964587ECABCED8922E2C40B8920</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5B4DCFDFA7ADA4BBDC7D4092C17F1E15</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>5C2CF542A8211D2ACA01B11B2556B0F4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1B4584FCD8E52BECCE2FC03945A2209E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5E0674F7FC1755D9CD969644D8934755</key>
+		<dict>
+			<key>fileRef</key>
+			<string>02174FAA4E9D01A4C224B65856A6CE52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5F34CDECC6E2973B7CE9BED06111FC0B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QPointAnnotation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6038108515B50BF1417A01BD03692C16</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QTextAnnotationView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>604651F24C25FF92119E88AC57A8153E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8649C85A00F19953BBE621AC304BF66C</string>
+				<string>77A2B2DEA28FCAF93079A087C444EBB8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>635789794BC5C26B7A2EE2D0E73915BD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B115ADEC6BCB912A9A68B29A3F2D79E3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>65A60277F4845B4B533FFCBA582C36AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QAnnotation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68A65F2DA2A02C8281CD43107B9155C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>6BE172087160CBBE2F84C7733DFAE40C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4CB6A3BE196D0312692651DD12FA67BE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7154EEDB8012CED55900BD1959101D4E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QPolylineView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>71FC2415F1D98CB8632C719084FA3852</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>OpenGLES.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/OpenGLES.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7251F5471ABE34FB27057D0F5FAB476F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88D564D744273DD990627AAFA8348F3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>73D8399783C9878956BFF85E41FE9515</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BE1A7EAEB6297EFD7DA2393DE9EA868F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>77A2B2DEA28FCAF93079A087C444EBB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2E36E8634339748B87B0D7C97F29C96A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>77B6AF1932CB13E50186A139E80DE27E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B060BE6730F20C87E2D57164BAA9CF44</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7BF00EC46CB1F39FA4EA97AFB871A845</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F70A921C70E7F70A88ECE5C19D62588E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
+				<string>DD00C4379B64E090C9F360C38D728145</string>
+				<string>EB57DDB3388FBC701046A1E93218737F</string>
+				<string>0A0539FDABBA00A1D138D78D66BF2269</string>
+				<string>FAA589F21A1684032791CDEF7B7C4589</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8086A3E55758994AB2ED9EEFC41C3F24</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Accelerate.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accelerate.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>82014F5B84AF5EC5F4DA7E7E30EC659F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FA6B3932CF549EC5FE6359CED31B3B2F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>844A76D3CF5A8FF30CE08BF4CFF953F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>85686DC38B8F5C4287714120749C541B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>59077D30693DC509A8FD6A7DF42780ED</string>
+				<string>D915F28FBEAF985CA963AEAB123E81B5</string>
+				<string>A21DCA11E75238D5AF45E49B99B4C5F6</string>
+				<string>2448BAC954ADE5CED6B5D1113D863B8F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TencentMapSdkLite</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8649C85A00F19953BBE621AC304BF66C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>42F9A459A77B0F0EA0BDE208B6DF5110</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>86D880BFA84A0377A061662D475EF0E5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QCircleView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>876AC124F9B1353396863800C1D2D5A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QMapView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88BFDE9E2D6C21CF1DD9B2E2E87851BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QRouteInfo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88D564D744273DD990627AAFA8348F3C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QPinAnnotationView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88F9C8CB20CC1075AF0E5C77C931F696</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>89AC263A7FD788179DE0083A664B639E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8E3E65141010D4FB1F010DC59907C912</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TencentMapSdkLite/TencentMapSdkLite-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>8BEA4FB3E87F5D88AA20DB18564EC842</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D7218DE10CD36AF2791236AC2809AF18</string>
+				<string>88F9C8CB20CC1075AF0E5C77C931F696</string>
+				<string>428783272EEA5B20A4E3C738781B826A</string>
+				<string>4856BD1A8B51AE347E483B12D1A1DD1A</string>
+				<string>187E63D05EBCEFCAB63EFFBE4AE48134</string>
+				<string>FA6B3932CF549EC5FE6359CED31B3B2F</string>
+				<string>B115ADEC6BCB912A9A68B29A3F2D79E3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-TencentMapSdkLite_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-TencentMapSdkLite_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C4FB2CA5A839BBC9FA1E5D1914FE1E7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>406A93E7B3AD632D087912F11D0C53CC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8D32A9EF1CC7FB5A824F82FCA5960592</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E3E65141010D4FB1F010DC59907C912</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>TencentMapSdkLite.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E5FB2419434F5FCDA23CBBF0D0989D8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1E2E087F694D9163F62241A90B738E75</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TencentMapSdkLite</string>
+			<key>path</key>
+			<string>TencentMapSdkLite</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8FB461E3EF94FEBA97D4BCF4D9FD0939</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8086A3E55758994AB2ED9EEFC41C3F24</string>
+				<string>B060BE6730F20C87E2D57164BAA9CF44</string>
+				<string>1B4584FCD8E52BECCE2FC03945A2209E</string>
+				<string>192E33207E454FD17C94B1A60C943028</string>
+				<string>E5583ACEED09B2A87C7B17809EBB2611</string>
+				<string>5B4DCFDFA7ADA4BBDC7D4092C17F1E15</string>
+				<string>22C7462426D8737A3E796D333EB60115</string>
+				<string>71FC2415F1D98CB8632C719084FA3852</string>
+				<string>4CB6A3BE196D0312692651DD12FA67BE</string>
+				<string>68A65F2DA2A02C8281CD43107B9155C2</string>
+				<string>BE1A7EAEB6297EFD7DA2393DE9EA868F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>text.script.ruby</string>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>952D364EE25FFC0759A3583B3CC189AF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TencentMapSdkLite-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9CA71488276E4E229BB472356B83BD8D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A78A485316614F137AEBBD10C4D5EC1F</string>
+				<string>844A76D3CF5A8FF30CE08BF4CFF953F2</string>
+				<string>8D32A9EF1CC7FB5A824F82FCA5960592</string>
+				<string>2DCD21E756C8A765876364C52307F24A</string>
+				<string>1445331765DBB8D721B8F16A52726C13</string>
+				<string>2A1B58D64AB2997A56A723988E3FBC5E</string>
+				<string>06870429616EF405BD1CC62BD0A7CE3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-TencentMapSdkLite_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-TencentMapSdkLite_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9CC3C2F2F23C041DB5C88E44DDD0B1E2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-TencentMapSdkLite_Example.a</string>
+			<key>path</key>
+			<string>libPods-TencentMapSdkLite_Example.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9FACB90FABE4269BC2565F37BF4CC087</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3A97C74CDD750C0E0573333ED6FD6935</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A1C08EBA6B3F7380DFA6C9586B964302</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8086A3E55758994AB2ED9EEFC41C3F24</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A21DCA11E75238D5AF45E49B99B4C5F6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8E3E65141010D4FB1F010DC59907C912</string>
+				<string>2E36E8634339748B87B0D7C97F29C96A</string>
+				<string>952D364EE25FFC0759A3583B3CC189AF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/TencentMapSdkLite</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A25C36D04C80893B07CC95DFDEA20276</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>TencentMapSdkLite</string>
+			<key>target</key>
+			<string>D4BB801E19DD87C60505AEF4387C6DEF</string>
+			<key>targetProxy</key>
+			<string>ACCA64420A70CDECD293AEB83A01988F</string>
+		</dict>
+		<key>A3C801AE12DF72E9D8396C9ED86F932D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>65A60277F4845B4B533FFCBA582C36AC</string>
+				<string>517BF617BD020700D7E70BBEBAA810BF</string>
+				<string>5977188C7A10CB1C682308B4BCEC86FA</string>
+				<string>0AF14B675E92D5B9717B1A09B781BA6B</string>
+				<string>86D880BFA84A0377A061662D475EF0E5</string>
+				<string>AB6DCD7605CE6A9FE9DFA973FC3FB3B6</string>
+				<string>3A97C74CDD750C0E0573333ED6FD6935</string>
+				<string>876AC124F9B1353396863800C1D2D5A9</string>
+				<string>A422792859BC3FD2BBFE913FBCD6F67C</string>
+				<string>E3749EFA72D0865F58D0FA64A277A4E4</string>
+				<string>02174FAA4E9D01A4C224B65856A6CE52</string>
+				<string>0295E60AFD627985646FD9302FB7234D</string>
+				<string>88D564D744273DD990627AAFA8348F3C</string>
+				<string>5F34CDECC6E2973B7CE9BED06111FC0B</string>
+				<string>AB119D7DF04E0499E2D7410365BD49A9</string>
+				<string>FD7B7EAEE5D7417F7793EED8D2413461</string>
+				<string>1F488B0C085D2E3DFE3527E3B2411859</string>
+				<string>AC41C646CA91EE919433937EEC9B7407</string>
+				<string>7154EEDB8012CED55900BD1959101D4E</string>
+				<string>88BFDE9E2D6C21CF1DD9B2E2E87851BF</string>
+				<string>1D0F09FF5D963A66B8D3617E978875DE</string>
+				<string>37AF47870E1FAAE6B4843137A615E406</string>
+				<string>6038108515B50BF1417A01BD03692C16</string>
+				<string>4FD35964587ECABCED8922E2C40B8920</string>
+				<string>F70A921C70E7F70A88ECE5C19D62588E</string>
+				<string>C5D7EECD1C4038215803784C97AA45A1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Headers</string>
+			<key>path</key>
+			<string>Headers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A422792859BC3FD2BBFE913FBCD6F67C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QMultiPoint.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A53FCA41C674C3637CDDC3EC2B528A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>42F9A459A77B0F0EA0BDE208B6DF5110</string>
+				<string>A3C801AE12DF72E9D8396C9ED86F932D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A78A485316614F137AEBBD10C4D5EC1F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7AD72D6AA2BC894C690AF4D46B0844C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>192E33207E454FD17C94B1A60C943028</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A9BE22B2BB0264617A34E0328DD1FEBA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DE192075448A58943E2BE824DED061C4</string>
+				<string>50361EB421CAB5765582386ECDC83A4F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>AB119D7DF04E0499E2D7410365BD49A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QPolygon.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB6DCD7605CE6A9FE9DFA973FC3FB3B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QGeometry.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC41C646CA91EE919433937EEC9B7407</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QPolyline.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ACCA64420A70CDECD293AEB83A01988F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D4BB801E19DD87C60505AEF4387C6DEF</string>
+			<key>remoteInfo</key>
+			<string>TencentMapSdkLite</string>
+		</dict>
+		<key>AE2A7798E07C79D318155CE9098E8CBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0AF14B675E92D5B9717B1A09B781BA6B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B060BE6730F20C87E2D57164BAA9CF44</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>B115ADEC6BCB912A9A68B29A3F2D79E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B7324857C38B065FEB1EEE3105C2367A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGNING_REQUIRED</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_RELEASE=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>PROVISIONING_PROFILE_SPECIFIER</key>
+				<string>NO_SIGNING/</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B8E85FF84EA3D127D74B2A9E375F652C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5B4DCFDFA7ADA4BBDC7D4092C17F1E15</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B9071F3FF78BEF5AC766F1AE5F19015F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68A65F2DA2A02C8281CD43107B9155C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BE1A7EAEB6297EFD7DA2393DE9EA868F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>BF638DFF8F297B8196675990B5090F83</key>
+		<dict>
+			<key>fileRef</key>
+			<string>37AF47870E1FAAE6B4843137A615E406</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C421D98446625A84D95F4CDC62AD4943</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>path</key>
+			<string>SOSOMAPRES.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5D7EECD1C4038215803784C97AA45A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QUserLocationView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6E79E3D39FB699A79780A2AF441CDF4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>876AC124F9B1353396863800C1D2D5A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C8814EF5FE8D6D32DD0544B16A95E591</key>
+		<dict>
+			<key>fileRef</key>
+			<string>71FC2415F1D98CB8632C719084FA3852</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C8DA4A8032A3E5B8088E75C308CD5996</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5583ACEED09B2A87C7B17809EBB2611</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D1929A070926ECA09502DADF7FA9FE77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0295E60AFD627985646FD9302FB7234D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D36F5F567EC309000A73AC561866DBDF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RELEASENOTE.md</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>0A0539FDABBA00A1D138D78D66BF2269</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>DCDF9048C0F865453407D14ABAA3907A</string>
+				<string>3F2E7C1EF03E2DBFECF1E0D01E80E999</string>
+				<string>D4BB801E19DD87C60505AEF4387C6DEF</string>
+			</array>
+		</dict>
+		<key>D4BB801E19DD87C60505AEF4387C6DEF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F6E0258E54169A5A06EBA8F820B8B898</string>
+			<key>buildPhases</key>
+			<array>
+				<string>604651F24C25FF92119E88AC57A8153E</string>
+				<string>2FFE3355E29DE6C49B5FEABD73CF361A</string>
+				<string>434A3794FA715CBF8CB0AA78D71498A2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TencentMapSdkLite</string>
+			<key>productName</key>
+			<string>TencentMapSdkLite</string>
+			<key>productReference</key>
+			<string>53DBB142C53B3323DB70123B2A322633</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>D5BC4EC659E05C1AF365FEBEC1B1836F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5977188C7A10CB1C682308B4BCEC86FA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D7218DE10CD36AF2791236AC2809AF18</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D8C4198A9B3D08481920188C3D9B05D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1D0F09FF5D963A66B8D3617E978875DE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D915F28FBEAF985CA963AEAB123E81B5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8E5FB2419434F5FCDA23CBBF0D0989D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA9398C3D13514E7274B5A880F50F902</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DE16FDFC87C413C16451A599A9D43D52</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DC48479311AD6E96EF510862AFAA33C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AC41C646CA91EE919433937EEC9B7407</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DCDF9048C0F865453407D14ABAA3907A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>A9BE22B2BB0264617A34E0328DD1FEBA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>36455536428D9F8815A4F6EF687C8C42</string>
+				<string>ECD1DC5BF90F13E566A026B7E1BDE87D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>A25C36D04C80893B07CC95DFDEA20276</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TencentMapSdkLite_Example</string>
+			<key>productName</key>
+			<string>Pods-TencentMapSdkLite_Example</string>
+			<key>productReference</key>
+			<string>9CC3C2F2F23C041DB5C88E44DDD0B1E2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>DD00C4379B64E090C9F360C38D728145</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>85686DC38B8F5C4287714120749C541B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE16FDFC87C413C16451A599A9D43D52</key>
+		<dict>
+			<key>fileRef</key>
+			<string>428783272EEA5B20A4E3C738781B826A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DE192075448A58943E2BE824DED061C4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2A1B58D64AB2997A56A723988E3FBC5E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=appletvos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string></string>
+				<key>CODE_SIGN_IDENTITY[sdk=watchos*]</key>
+				<string></string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E16139A94C26BE35146373E238B6F433</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FD7B7EAEE5D7417F7793EED8D2413461</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E3749EFA72D0865F58D0FA64A277A4E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QOverlay.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5583ACEED09B2A87C7B17809EBB2611</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreText.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreText.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>EB57DDB3388FBC701046A1E93218737F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8FB461E3EF94FEBA97D4BCF4D9FD0939</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ECC5C6F334067AECE30831F5B430C620</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7154EEDB8012CED55900BD1959101D4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>ECD1DC5BF90F13E566A026B7E1BDE87D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>54F8D63F0A460E106E7ABC594D3AC92C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F1AA0D1867093B863ED98C3FD3735C4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5F34CDECC6E2973B7CE9BED06111FC0B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F3FA3A7DABE8C03237E49AE13E473396</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6038108515B50BF1417A01BD03692C16</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F6E0258E54169A5A06EBA8F820B8B898</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>89AC263A7FD788179DE0083A664B639E</string>
+				<string>0F1EBA2B3717EB096E88E1AD021CC76A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F70A921C70E7F70A88ECE5C19D62588E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QUserLocation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA6B3932CF549EC5FE6359CED31B3B2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TencentMapSdkLite_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAA589F21A1684032791CDEF7B7C4589</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9CA71488276E4E229BB472356B83BD8D</string>
+				<string>8BEA4FB3E87F5D88AA20DB18564EC842</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD7B7EAEE5D7417F7793EED8D2413461</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>QPolygonUtil.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFA4F1E46603A602F06D98131440ABF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libQMapKitLite.a</string>
+			<key>path</key>
+			<string>TencentMapSdkLite/Library/libQMapKitLite.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>
