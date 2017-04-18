@@ -243,22 +243,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>1E2E087F694D9163F62241A90B738E75</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D36F5F567EC309000A73AC561866DBDF</string>
-				<string>C421D98446625A84D95F4CDC62AD4943</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Bundles</string>
-			<key>path</key>
-			<string>Bundles</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>1EC09C358F531F478374D97007999DF6</key>
 		<dict>
 			<key>fileRef</key>
@@ -418,6 +402,22 @@
 				</array>
 			</dict>
 		</dict>
+		<key>30CBE3E07F862D622CF435C1EC653495</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>996FFB760500ED0C96E567F42E1A4AC0</string>
+				<string>42FF7F6E62CB2651462C38F280891730</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>35015E0F4B99C60FB70CB9FA11525ADD</key>
 		<dict>
 			<key>fileRef</key>
@@ -539,6 +539,19 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>ReplaceMe.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42FF7F6E62CB2651462C38F280891730</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>path</key>
+			<string>SOSOMAPRES.bundle</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1381,21 +1394,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8E5FB2419434F5FCDA23CBBF0D0989D8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1E2E087F694D9163F62241A90B738E75</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TencentMapSdkLite</string>
-			<key>path</key>
-			<string>TencentMapSdkLite</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8FB461E3EF94FEBA97D4BCF4D9FD0939</key>
 		<dict>
 			<key>children</key>
@@ -1448,6 +1446,17 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>TencentMapSdkLite-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>996FFB760500ED0C96E567F42E1A4AC0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RELEASENOTE.md</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1847,19 +1856,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>C421D98446625A84D95F4CDC62AD4943</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>path</key>
-			<string>SOSOMAPRES.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C5D7EECD1C4038215803784C97AA45A1</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1914,17 +1910,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>D36F5F567EC309000A73AC561866DBDF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RELEASENOTE.md</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -2036,7 +2021,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>8E5FB2419434F5FCDA23CBBF0D0989D8</string>
+				<string>E05186E27AC8491EB9353D0F276F76C3</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2161,6 +2146,21 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
+		</dict>
+		<key>E05186E27AC8491EB9353D0F276F76C3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>30CBE3E07F862D622CF435C1EC653495</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TencentMapSdkLite</string>
+			<key>path</key>
+			<string>TencentMapSdkLite</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E16139A94C26BE35146373E238B6F433</key>
 		<dict>

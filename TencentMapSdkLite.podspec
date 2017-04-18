@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "TencentMapSdkLite"
-s.version          = "2.0.0.00.06"
+s.version          = "2.0.0.00.07"
 s.summary          = "This is TencentMapSdk Lite."
 s.description      = 'The Map Software develop kit.'
 s.homepage         = "https://github.com/TencentSDK/TencentMapSdkLite"

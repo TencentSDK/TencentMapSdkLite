@@ -116,6 +116,11 @@ typedef enum:NSUInteger{
 @property (nonatomic) CGPoint calloutOffset;
 
 /**
+ * 中心点的偏移值
+ */
+@property (nonatomic) CGPoint centerOffset;
+
+/**
  * 默认为YES,当为NO时view忽略触摸事件
  */
 @property (nonatomic, getter=isEnabled) BOOL enabled;

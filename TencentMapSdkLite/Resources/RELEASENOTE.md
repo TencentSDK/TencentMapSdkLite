@@ -5,3 +5,7 @@
 3. QAnnotationView的dispLevel属性改为默认为0,值越大优先级越高,以前的逻辑为优先级最高是1，值越大优先级越低，默认0
 4. 针对后台执行opengl代码导致crash加了保护
 5. 删除了一部分(美团)用不到的资源
+
+2.0.0.00.07
+1. QAnnotationView增加了centerOffset属性
+2. bug fix

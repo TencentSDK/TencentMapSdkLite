@@ -74,12 +74,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "../../TencentMapSdkLite/Bundles/RELEASENOTE.md"
-  install_resource "../../TencentMapSdkLite/Bundles/SOSOMAPRES.bundle"
+  install_resource "../../TencentMapSdkLite/Resources/RELEASENOTE.md"
+  install_resource "../../TencentMapSdkLite/Resources/SOSOMAPRES.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "../../TencentMapSdkLite/Bundles/RELEASENOTE.md"
-  install_resource "../../TencentMapSdkLite/Bundles/SOSOMAPRES.bundle"
+  install_resource "../../TencentMapSdkLite/Resources/RELEASENOTE.md"
+  install_resource "../../TencentMapSdkLite/Resources/SOSOMAPRES.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
