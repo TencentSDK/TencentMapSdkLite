@@ -1,5 +1,5 @@
 PODS:
-  - TencentMapSdkLite (2.0.0.00.08)
+  - TencentMapSdkLite (2.0.0.00.09)
 
 DEPENDENCIES:
   - TencentMapSdkLite (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TencentMapSdkLite: 717db03363202798e7b6f9fb06f0406e2782f669
+  TencentMapSdkLite: 14ed1fbf5346573608e58b682162b38ec2526cfc
 
 PODFILE CHECKSUM: 8e041597aa54e70f9670af3cccb57290e715a2a1
 

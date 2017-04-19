@@ -37,3 +37,8 @@
 -(void)setRotation:(CGFloat)rotation overlooking:(CGFloat)overlooking animated:(BOOL)animated;
 
 2. bug fix
+
+=============================================================
+2.0.0.00.09
+
+1.切换为精简版引擎包
