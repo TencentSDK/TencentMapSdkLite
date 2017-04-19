@@ -138,6 +138,21 @@
             duration:(NSTimeInterval)duration
           completion:(void (^)(BOOL finished))completion;
 
+/*
+ * 当前地图的旋转角度
+ */
+@property(nonatomic, assign)CGFloat rotation;
+
+/*
+ * 当前地图的俯视角度,0 ~ 50
+ */
+@property(nonatomic, assign)CGFloat overlooking;
+
+/*
+ * 设置地图的旋转角度与俯视角度
+ */
+-(void)setRotation:(CGFloat)rotation overlooking:(CGFloat)overlooking animated:(BOOL)animated;
+
 #pragma mark - Others
 
 /**
@@ -168,6 +183,11 @@
  * 是否支持手势进入3D模式. 默认为YES.
  */
 @property (nonatomic, assign, getter=isPitchEnabled) BOOL pitchEnabled;
+
+/**
+ * 是否支持2D模式下旋转. 默认为NO.
+ */
+@property (nonatomic, assign) BOOL rotate2DEnabled;
 
 #pragma mark - Map zoom & map scale
 
